@@ -47,7 +47,8 @@ class JsonToVkbFeatureProcessor:
         vkb_feature.beheerder_key = dict_list['properties']['beheerder']['key']
         if 'wegenregisterCode' in dict_list['properties']['beheerder']:
             vkb_feature.beheerder_code = dict_list['properties']['beheerder']['wegenregisterCode']
-        vkb_feature.beheerder_naam = dict_list['properties']['beheerder']['naam']
+        if 'naam' in dict_list['properties']['beheerder']:
+            vkb_feature.beheerder_naam = dict_list['properties']['beheerder']['naam']
         vkb_feature.borden = []
         vkb_feature.bevestigingen = []
         vkb_feature.steunen = []
@@ -59,7 +60,8 @@ class JsonToVkbFeatureProcessor:
                 aanzicht_hoek += 360.0
             if aanzicht_hoek > 360.0:
                 aanzicht_hoek = aanzicht_hoek % 360.0
-            vkb_feature.wegsegment_ids.append(aanzicht['wegsegmentid'])
+            if 'wegsegmentid' in aanzicht:
+                vkb_feature.wegsegment_ids.append(aanzicht['wegsegmentid'])
 
             for bord_dict in aanzicht['borden']:
                 bord = VkbBord()
