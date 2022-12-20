@@ -18,6 +18,7 @@ class VkbFeatureToOSLOProcessor:
         self.graph.bind('od', 'https://data.vlaanderen.be/ns/openbaardomein#')
         self.graph.bind('geo', 'http://www.w3.org/2003/01/geo/wgs84_pos#')
         self.graph.bind('loc', 'http://www.w3.org/ns/locn#')
+        self.graph.bind('skos', 'http://www.w3.org/2004/02/skos/core#')
 
         self.load_beheerders()
 
@@ -37,13 +38,13 @@ class VkbFeatureToOSLOProcessor:
         geo_ref = BNode()
         self.graph.add((opstelling_ref, URIRef('http://www.w3.org/ns/locn#geometry'), geo_ref))
         self.graph.add((geo_ref, RDF.type, URIRef('http://www.w3.org/2003/01/geo/wgs84_pos#Point')))
-        self.graph.add((geo_ref, URIRef('http://www.w3.org/2003/01/geo/wgs84_pos#lat'), Literal(coords[0], datatype=XSD.decimal)))
-        self.graph.add((geo_ref, URIRef('http://www.w3.org/2003/01/geo/wgs84_pos#long'), Literal(coords[1], datatype=XSD.decimal)))
-
+        self.graph.add(
+            (geo_ref, URIRef('http://www.w3.org/2003/01/geo/wgs84_pos#lat'), Literal(coords[0], datatype=XSD.decimal)))
+        self.graph.add(
+            (geo_ref, URIRef('http://www.w3.org/2003/01/geo/wgs84_pos#long'), Literal(coords[1], datatype=XSD.decimal)))
 
         feature_objects = [opstelling_ref]
         onderborden = []
-
         for index, wegsegment_id in enumerate(feature.wegsegment_ids):
             self.graph.add((
                 opstelling_ref, URIRef('https://data.vlaanderen.be/ns/mobiliteit#hoortBij'),
@@ -52,6 +53,8 @@ class VkbFeatureToOSLOProcessor:
 
         for f_bord in feature.borden:
             bord_ref = URIRef(f'https://data.awvvlaanderen.be/id/asset/{feature.id}_bord_{f_bord.id}')
+            self.graph.add((bord_ref, RDF.type,
+                            URIRef('https://data.vlaanderen.be/ns/mobiliteit#RetroreflecterendVerkeersbord')))
             feature_objects.append(bord_ref)
 
             # is onderbord
@@ -79,18 +82,24 @@ class VkbFeatureToOSLOProcessor:
             if ovo_code is None:
                 ovo_code = self.beheerders.get(feature.beheerder_naam, None)
             if ovo_code is None:
-                feature.beheerder_naam = feature.beheerder_naam.replace(' (na 2019)', '').replace('Provincie ', '').replace('Vlaams Brabant', 'Vlaams-Brabant')
+                feature.beheerder_naam = feature.beheerder_naam.replace(' (na 2019)', '').replace('Provincie ',
+                                                                                                  '').replace(
+                    'Vlaams Brabant', 'Vlaams-Brabant')
             if ovo_code is None and 'Gemeente' in feature.beheerder_naam:
                 ovo_code = self.beheerders.get(feature.beheerder_naam.replace('Gemeente', 'Stad'), None)
             if ovo_code is not None:
                 self.graph.add((bord_ref, URIRef('https://data.vlaanderen.be/ns/openbaardomein#beheerder'),
                                 URIRef(f'https://data.vlaanderen.be/doc/organisatie/{ovo_code}')))
+                self.graph.add((URIRef(f'https://data.vlaanderen.be/doc/organisatie/{ovo_code}'), RDF.type,
+                                URIRef('http://www.w3.org/ns/org#Organization')))
             else:
                 print(f'no beheerder: {feature.beheerder_code} {feature.beheerder_naam}')
 
             # verkeersteken
             teken_ref = URIRef(f'https://data.awvvlaanderen.be/id/asset/{feature.id}_bord_{f_bord.id}_teken')
             self.graph.add((bord_ref, URIRef('https://data.vlaanderen.be/ns/mobiliteit#realiseert'), teken_ref))
+            self.graph.add((teken_ref, RDF.type,
+                            URIRef('https://data.vlaanderen.be/ns/mobiliteit#Verkeersbord-Verkeersteken')))
 
             if f_bord.bord_code[0] == 'G' and len(f_bord.parameters) > 0:
                 self.graph.add((teken_ref, URIRef('https://data.vlaanderen.be/ns/mobiliteit#variabelOpschrift'),
@@ -98,6 +107,8 @@ class VkbFeatureToOSLOProcessor:
 
             # verkeersbordconcept
             concept_ref = URIRef(f'https://data.awvvlaanderen.be/id/asset/{feature.id}_bord_{f_bord.id}_concept')
+            self.graph.add((concept_ref, RDF.type,
+                            URIRef('https://data.vlaanderen.be/ns/mobiliteit#Verkeersbordconcept')))
             self.graph.add(
                 (teken_ref, URIRef('https://data.vlaanderen.be/ns/mobiliteit#heeftVerkeersbordconcept'), concept_ref))
             self.graph.add((concept_ref, URIRef('http://www.w3.org/2004/02/skos/core#prefLabel'),

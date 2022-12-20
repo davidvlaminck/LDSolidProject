@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>SPARQL endpoint</title>
+	<style type="text/css">
+		table {
+		}
+		table, th, td {
+			border: 1px solid;
+			border-collapse: collapse;
+			font-size: 0.95em;
+		}
+		#feedback {
+			color: red;
+		}
+	</style>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		function dataToTable(data) {
+			const json_data = JSON.parse(data);
+			const tableResult = document.getElementById("result");
+
+			firstRow = document.createElement('tr');
+			tableResult.appendChild(firstRow);
+			for (var headerIndex in json_data["headers"]) {
+				headerElem = document.createElement('th');
+				headerElem.appendChild(document.createTextNode(json_data["headers"][headerIndex]));
+				firstRow.appendChild(headerElem);
+			}
+
+			for (var rowIndex in json_data["data"]) {
+				dataRow = document.createElement('tr');
+				for (var colIndex in json_data["data"][rowIndex]) {
+					dataElem = document.createElement('td');
+					dataElem.appendChild(document.createTextNode(json_data["data"][rowIndex][colIndex]));
+					dataRow.appendChild(dataElem);
+				}
+				tableResult.appendChild(dataRow);
+			}
+		}
+
+		function sparqlRequest() {
+			document.getElementById("result").innerHTML = "";
+			document.getElementById("feedback").innerHTML = "";
+			queryString = document.getElementById("query-textarea").value;
+			$.ajax({
+				type: "GET",
+				url: "http://localhost:8000/sparql",
+				headers: {  "Access-Control-Allow-Origin": "*" },
+				contentType: "text/plain",
+				data : {
+					query: queryString
+				},
+				success: function (data) {
+					dataToTable(data);
+				},
+				error: function (data) {
+					console.log(data);
+					document.getElementById("feedback").innerHTML = data.status + ": " + data.responseJSON['detail'];
+				}
+			})
+		};
+	</script>
+
+</head>
+<body style="margin:20px;">
+	<div id="sparql-box">
+		<textarea id="query-textarea" rows="5" cols="80">Insert your SPARQL query here</textarea>
+		</br>
+		<button type="button" onclick="sparqlRequest()">Execute</button>
+		<div id="feedback"></div>
+	</div>
+	<table id="result"></table>
+	<div id="result-time"></div>
+</body>

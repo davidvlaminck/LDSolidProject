@@ -14,15 +14,14 @@ if __name__ == '__main__':
         data_list = json.load(f)
 
     features = []
+
     # use multithreading
     start = time.time()
     to_feature_processor = JsonToVkbFeatureProcessor()
-
     with concurrent.futures.ThreadPoolExecutor() as executor:
         results = [executor.submit(to_feature_processor.process_json_object, dict_list=dict_list) for dict_list in data_list]
         for f in concurrent.futures.as_completed(results):
             features.append(f.result())
-
     end = time.time()
     print(colored(f'Processed to vkb features: {len(features)} in {round(end - start, 2)} seconds', 'green'))
 

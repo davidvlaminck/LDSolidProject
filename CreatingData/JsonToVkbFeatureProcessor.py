@@ -86,48 +86,6 @@ class JsonToVkbFeatureProcessor:
                 if 'datumPlaasting' in bord_dict and bord_dict['datumPlaasting'] != '01/01/1950':
                     bord.plaatsing_datum = datetime.strptime(bord_dict['datumPlaatsing'], '%d/%m/%Y')
 
-                if 'bevestigingsProfielen' not in bord_dict:
-                    print( vkb_feature.id)
-                    continue
-
-                for beugel_dict in bord_dict['bevestigingsProfielen']:
-                    bevestiging = VkbBevestiging()
-                    vkb_feature.bevestigingen.append(bevestiging)
-                    bevestiging.id = beugel_dict['id']
-                    bevestiging.bord_id = bord.id
-                    steun_ids = set()
-                    for x in beugel_dict['bevestigingen']:
-                        if 'ophangingId' in x:
-                            steun_ids.add(x['ophangingId'])
-
-                    bevestiging.steun_ids = list(steun_ids)
-
-                    client_ids = list(map(lambda x: x.client_id, vkb_feature.steunen))
-                    for steun_dict in beugel_dict['bevestigingen']:
-                        if 'ophangingId' not in steun_dict or steun_dict['ophangingId'] in client_ids:
-                            continue
-                        if not steun_dict['type']['actief']:
-                            continue
-                        steun = VkbSteun()
-                        vkb_feature.steunen.append(steun)
-                        steun.client_id = steun_dict['ophangingId']
-                        steun.type_key = steun_dict['type']['key']
-
-        for ophanging_dict in dict_list['properties']['ophangingen']:
-            # steunen + funderingen
-            steun_existing = next((s for s in vkb_feature.steunen if s.client_id == ophanging_dict['clientId']), None)
-            if steun_existing is None:
-                print(colored(f'steun does not yet exist in feature {vkb_feature.id}', 'red'))
-                continue
-            steun_existing.id = ophanging_dict['id']
-            steun_existing.x = ophanging_dict['x']
-            steun_existing.diameter = ophanging_dict['diameter']
-            steun_existing.lengte = ophanging_dict['lengte']
-            if 'breedte' in ophanging_dict:
-                steun_existing.breedte = ophanging_dict['breedte']
-            steun_existing.kleur_key = ophanging_dict['kleur']['key']
-            steun_existing.sokkel_key = ophanging_dict['sokkelAfmetingen']['key']
-
         return vkb_feature
 
     @staticmethod

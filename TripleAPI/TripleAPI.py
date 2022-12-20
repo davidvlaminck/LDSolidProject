@@ -1,0 +1,2 @@
+class TripleAPI:
+    pass
