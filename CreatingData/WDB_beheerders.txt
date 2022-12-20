@@ -1,0 +1,1528 @@
+112 - Puurs
+Ja
+AWV112
+OVO039695
+114 - Geel
+Ja
+AWV114
+OVO039698
+121 - Antwerpen
+Ja
+AWV121
+OVO039716
+123 - Brecht
+Ja
+AWV123
+OVO029060
+125 - Vosselaar
+Ja
+AWV125
+OVO039727
+211 - Halle
+Ja
+AWV211
+OVO038474
+212 - Vilvoorde
+Ja
+AWV212
+OVO038462
+213 - Leuven
+Ja
+AWV213
+OVO035239
+214 - Aarschot
+Ja
+AWV214
+OVO038468
+311 - Brugge + autosnelwegen Noord
+Ja
+AWV311
+OVO028757
+312 - Kortrijk + autosnelwegen Zuid
+Ja
+AWV312
+OVO028759
+313 - Ieper
+Ja
+AWV313
+OVO028758
+314 - Diksmuide
+Nee
+AWV314
+OVO043818
+315 - Oostende
+Ja
+AWV315
+OVO043821
+316 - Pittem
+Ja
+AWV316
+OVO028761
+411 - Gent & Autosnelwegen
+Ja
+AWV411
+OVO039811
+412 - Oudenaarde
+Ja
+AWV412
+OVO043610
+413 - Eeklo
+Ja
+AWV413
+OVO039818
+414 - Sint-Niklaas
+Ja
+AWV414
+OVO039821
+415 - Aalst
+Ja
+AWV415
+OVO039824
+421 - Autosnelwegen Gentbrugge
+Nee
+AWV421
+OVO043661
+711 - Sint-Truiden
+Nee
+AWV711
+OVO043560
+712 - Hasselt
+Nee
+AWV712
+OVO039775
+713 - Neerpelt
+Nee
+AWV713
+OVO043563
+714 - Tongeren
+Nee
+AWV714
+OVO039780
+715 - Maaseik
+Nee
+AWV715
+OVO039784
+716 - Genk
+Nee
+AWV716
+OVO039787
+717 - West - Limburg
+Ja
+AWV717
+OVO039787
+718 - Oost - Limburg
+Ja
+AWV718
+OVO039784
+719 - Zuid - Limburg
+Ja
+AWV719
+OVO039780
+720 - Centraal - Limburg
+Ja
+AWV720
+OVO039775
+Agentschap Wegen en Verkeer
+Ja
+AWV
+Anderewegbeheerders
+Ander
+Nee
+-7
+Anderewegbeheerders
+Antwerpen
+Ja
+ 
+OVO000548
+Brussels Gewest
+Ja
+04000
+Anderewegbeheerders
+De Lijn
+Ja
+LIJN
+0242.069.537
+De Vlaamse Waterweg nv - Afdeling Zeeschelde
+Ja
+V0014
+Anderewegbeheerders
+EMT
+Ja
+ 
+OVO000554
+Frankrijk
+Ja
+ 
+Anderewegbeheerders
+Gemeente Aalst
+Ja
+41002
+0207.437.468
+Gemeente Aalter (na 2019)
+Ja
+44084
+0697.608.063
+Gemeente Aalter (voor 2019)
+Nee
+44001
+0207.449.544
+Gemeente Aarschot
+Ja
+24001
+0207.515.464
+Gemeente Aartselaar
+Ja
+11001
+0207.508.932
+Gemeente Affligem
+Ja
+23105
+0207.509.031
+Gemeente Alken
+Ja
+73001
+0207.474.882
+Gemeente Alveringem
+Ja
+38002
+0207.495.074
+Gemeente Antwerpen
+Ja
+11002
+0207.500.123
+Gemeente Anzegem
+Ja
+34002
+0207.484.780
+Gemeente Ardooie
+Ja
+37020
+0216.771.046
+Gemeente Arendonk
+Ja
+13001
+0207.505.368
+Gemeente As
+Ja
+71002
+0207.465.083
+Gemeente Asse
+Ja
+23002
+0207.506.259
+Gemeente Assenede
+Ja
+43002
+0207.447.861
+Gemeente Avelgem
+Ja
+34003
+0207.485.770
+Gemeente Baarle-Hertog
+Ja
+13002
+0207.509.427
+Gemeente Balen
+Ja
+13003
+0207.537.042
+Gemeente Beernem
+Ja
+31003
+0207.527.936
+Gemeente Beerse
+Ja
+13004
+0207.505.764
+Gemeente Beersel
+Ja
+23003
+0207.506.358
+Gemeente Begijnendijk
+Ja
+24007
+0207.516.058
+Gemeente Bekkevoort
+Ja
+24008
+0207.516.157
+Gemeente Beringen
+Ja
+71004
+0207.465.281
+Gemeente Berlaar
+Ja
+12002
+0207.537.339
+Gemeente Berlare
+Ja
+42003
+0207.445.485
+Gemeente Bertem
+Ja
+24009
+0207.516.256
+Gemeente Bever
+Ja
+23009
+0207.539.616
+Gemeente Beveren
+Ja
+46003
+0207.462.313
+Gemeente Bierbeek
+Ja
+24011
+0207.516.454
+Gemeente Bilzen
+Ja
+73006
+0207.475.377
+Gemeente Blankenberge
+Ja
+31004
+0206.684.927
+Gemeente Bocholt
+Ja
+72003
+0207.471.518
+Gemeente Boechout
+Ja
+11004
+0207.536.448
+Gemeente Bonheiden
+Ja
+12005
+0207.534.171
+Gemeente Boom
+Ja
+11005
+0207.506.952
+Gemeente Boortmeerbeek
+Ja
+24014
+0207.516.751
+Gemeente Borgloon
+Ja
+73009
+0206.914.361
+Gemeente Bornem
+Ja
+12007
+0207.500.420
+Gemeente Borsbeek
+Ja
+11007
+0207.509.229
+Gemeente Boutersem
+Ja
+24016
+0207.516.949
+Gemeente Brakel
+Ja
+45059
+0207.690.262
+Gemeente Brasschaat
+Ja
+11008
+0206.677.801
+Gemeente Brecht
+Ja
+11009
+0207.500.321
+Gemeente Bredene
+Ja
+35002
+0207.435.092
+Gemeente Bree
+Ja
+72004
+0207.471.617
+Gemeente Brugge
+Ja
+31005
+0207.528.035
+Gemeente Buggenhout
+Ja
+42004
+0207.445.287
+Gemeente Damme
+Ja
+31006
+0207.528.134
+Gemeente De Haan
+Ja
+35029
+0216.770.848
+Gemeente De Panne
+Ja
+38008
+0207.434.597
+Gemeente De Pinte
+Ja
+44012
+0207.450.534
+Gemeente Deerlijk
+Ja
+34009
+0207.488.443
+Gemeente Deinze (na 2019)
+Ja
+44083
+0697.608.162
+Gemeente Deinze (voor 2019)
+Nee
+44011
+0207.450.435
+Gemeente Denderleeuw
+Ja
+41011
+0207.439.745
+Gemeente Dendermonde
+Ja
+42006
+0207.445.584
+Gemeente Dentergem
+Ja
+37002
+0207.434.203
+Gemeente Dessel
+Ja
+13006
+0207.536.943
+Gemeente Destelbergen
+Ja
+44013
+0207.450.633
+Gemeente Diepenbeek
+Ja
+71011
+0207.465.974
+Gemeente Diest
+Ja
+24020
+0207.517.345
+Gemeente Diksmuide
+Ja
+32003
+0207.531.894
+Gemeente Dilbeek
+Ja
+23016
+0207.507.645
+Gemeente Dilsen-Stokkem
+Ja
+72041
+0207.471.716
+Gemeente Drogenbos
+Ja
+23098
+0207.484.186
+Gemeente Duffel
+Ja
+12009
+0207.534.864
+Gemeente Edegem
+Ja
+11013
+0207.537.933
+Gemeente Eeklo
+Ja
+43005
+0207.448.158
+Gemeente Erpe-Mere
+Ja
+41082
+0216.771.244
+Gemeente Essen
+Ja
+11016
+0207.537.438
+Gemeente Evergem
+Ja
+44019
+0207.451.128
+Gemeente Galmaarden
+Ja
+23023
+0207.508.338
+Gemeente Gavere
+Ja
+44020
+0207.451.326
+Gemeente Geel
+Ja
+13008
+0207.533.874
+Gemeente Geetbets
+Ja
+24028
+0207.518.137
+Gemeente Genk
+Ja
+71016
+0207.201.797
+Gemeente Gent
+Ja
+44021
+0207.451.227
+Gemeente Geraardsbergen
+Ja
+41018
+0207.485.374
+Gemeente Gingelom
+Ja
+71017
+0207.466.469
+Gemeente Gistel
+Ja
+35005
+0207.491.413
+Gemeente Glabbeek
+Ja
+24137
+0207.518.335
+Gemeente Gooik
+Ja
+23024
+0207.508.437
+Gemeente Grimbergen
+Ja
+23025
+0207.508.536
+Gemeente Grobbendonk
+Ja
+13010
+0207.501.806
+Gemeente Haacht
+Ja
+24033
+0207.518.632
+Gemeente Haaltert
+Ja
+41024
+0207.439.151
+Gemeente Halen
+Ja
+71020
+0207.466.766
+Gemeente Halle
+Ja
+23027
+0207.535.458
+Gemeente Ham
+Ja
+71069
+0216.772.234
+Gemeente Hamme
+Ja
+42008
+0207.445.782
+Gemeente Hamont-Achel
+Ja
+72037
+0216.772.630
+Gemeente Harelbeke
+Ja
+34013
+0207.492.502
+Gemeente Hasselt
+Ja
+71022
+0207.466.964
+Gemeente Hechtel-Eksel
+Ja
+72038
+0216.772.828
+Gemeente Heers
+Ja
+73022
+0207.476.862
+Gemeente Heist-op-den-Berg
+Ja
+12014
+0207.535.062
+Gemeente Hemiksem
+Ja
+11018
+0207.506.160
+Gemeente Herent
+Ja
+24038
+0207.519.127
+Gemeente Herentals
+Ja
+13011
+0207.504.675
+Gemeente Herenthout
+Ja
+13012
+0207.502.004
+Gemeente Herk-de-Stad
+Ja
+71024
+0207.467.162
+Gemeente Herne
+Ja
+23032
+0207.533.676
+Gemeente Herselt
+Ja
+13013
+0207.502.103
+Gemeente Herstappe
+Ja
+73028
+0207.477.456
+Gemeente Herzele
+Ja
+41027
+0207.439.448
+Gemeente Heusden-Zolder
+Ja
+71070
+0216.772.432
+Gemeente Heuvelland
+Ja
+33039
+0216.770.056
+Gemeente Hoegaarden
+Ja
+24041
+0207.519.424
+Gemeente Hoeilaart
+Ja
+23033
+0206.562.092
+Gemeente Hoeselt
+Ja
+73032
+0207.477.852
+Gemeente Holsbeek
+Ja
+24043
+0207.519.622
+Gemeente Hooglede
+Ja
+36006
+0207.490.621
+Gemeente Hoogstraten
+Ja
+13014
+0207.502.202
+Gemeente Horebeke
+Ja
+45062
+0216.771.442
+Gemeente Houthalen-Helchteren
+Ja
+72039
+0216.773.026
+Gemeente Houthulst
+Ja
+32006
+0207.532.092
+Gemeente Hove
+Ja
+11021
+0207.535.557
+Gemeente Huldenberg
+Ja
+24045
+0207.519.820
+Gemeente Hulshout
+Ja
+13016
+0207.502.497
+Gemeente Ichtegem
+Ja
+35006
+0207.431.332
+Gemeente Ieper
+Ja
+33011
+0207.484.681
+Gemeente Ingelmunster
+Ja
+36007
+0207.485.473
+Gemeente Izegem
+Ja
+36008
+0207.489.037
+Gemeente Jabbeke
+Ja
+31012
+0207.528.629
+Gemeente Kalmthout
+Ja
+11022
+0207.540.012
+Gemeente Kampenhout
+Ja
+23038
+0207.533.280
+Gemeente Kapelle-op-den-Bos
+Ja
+23039
+0207.534.468
+Gemeente Kapellen
+Ja
+11023
+0207.539.913
+Gemeente Kaprijke
+Ja
+43007
+0207.448.356
+Gemeente Kasterlee
+Ja
+13017
+0207.502.596
+Gemeente Keerbergen
+Ja
+24048
+0207.520.117
+Gemeente Kinrooi
+Ja
+72018
+0207.472.904
+Gemeente Kluisbergen
+Ja
+45060
+0207.690.757
+Gemeente Knesselare (voor 2019)
+Nee
+44029
+0207.452.118
+Gemeente Knokke-Heist
+Ja
+31043
+0207.691.252
+Gemeente Koekelare
+Ja
+32010
+0207.532.389
+Gemeente Koksijde
+Ja
+38014
+0207.494.480
+Gemeente Kontich
+Ja
+11024
+0207.536.250
+Gemeente Kortemark
+Ja
+32011
+0207.532.488
+Gemeente Kortenaken
+Ja
+24054
+0207.520.711
+Gemeente Kortenberg
+Ja
+24055
+0207.520.810
+Gemeente Kortessem
+Ja
+73040
+0207.478.545
+Gemeente Kortrijk
+Ja
+34022
+0207.494.678
+Gemeente Kraainem
+Ja
+23099
+0207.484.285
+Gemeente Kruibeke
+Ja
+46013
+0207.463.303
+Gemeente Kruisem
+Ja
+45068
+0697.608.954
+Gemeente Kruishoutem (voor 2019)
+Nee
+45017
+0207.458.254
+Gemeente Kuurne
+Ja
+34023
+0207.430.342
+Gemeente Laakdal
+Ja
+13053
+0216.769.066
+Gemeente Laarne
+Ja
+42010
+0207.445.881
+Gemeente Lanaken
+Ja
+73042
+0207.478.743
+Gemeente Landen
+Ja
+24059
+0207.521.206
+Gemeente Langemark-Poelkapelle
+Ja
+33040
+0216.770.254
+Gemeente Lebbeke
+Ja
+42011
+0207.446.079
+Gemeente Lede
+Ja
+41034
+0207.440.438
+Gemeente Ledegem
+Ja
+36010
+0207.487.354
+Gemeente Lendelede
+Ja
+34025
+0207.491.710
+Gemeente Lennik
+Ja
+23104
+0216.769.264
+Gemeente Leopoldsburg
+Ja
+71034
+0207.468.152
+Gemeente Leuven
+Ja
+24062
+0207.521.503
+Gemeente Lichtervelde
+Ja
+36011
+0207.435.785
+Gemeente Liedekerke
+Ja
+23044
+0207.538.725
+Gemeente Lier
+Ja
+12021
+0207.502.301
+Gemeente Lierde
+Ja
+45063
+0216.771.640
+Gemeente Lievegem
+Ja
+44085
+0697.609.152
+Gemeente Lille
+Ja
+13019
+0207.502.794
+Gemeente Linkebeek
+Ja
+23100
+0207.484.384
+Gemeente Lint
+Ja
+11025
+0207.501.410
+Gemeente Linter
+Ja
+24133
+0207.368.380
+Gemeente Lo-Reninge
+Ja
+32030
+0216.769.858
+Gemeente Lochristi
+Ja
+44034
+0207.452.514
+Gemeente Lokeren
+Ja
+46014
+0207.463.402
+Gemeente Lommel
+Ja
+72020
+0207.473.102
+Gemeente Londerzeel
+Ja
+23045
+0207.535.755
+Gemeente Lovendegem (voor 2019)
+Nee
+44036
+0207.452.712
+Gemeente Lubbeek
+Ja
+24066
+0207.521.996
+Gemeente Lummen
+Ja
+71037
+0207.468.350
+Gemeente Maarkedal
+Ja
+45064
+0216.771.838
+Gemeente Maaseik
+Ja
+72021
+0207.473.201
+Gemeente Maasmechelen
+Ja
+73107
+0207.691.351
+Gemeente Machelen
+Ja
+23047
+0207.539.121
+Gemeente Maldegem
+Ja
+43010
+0207.448.554
+Gemeente Malle
+Ja
+11057
+0207.537.240
+Gemeente Mechelen
+Ja
+12025
+0207.499.430
+Gemeente Meerhout
+Ja
+13021
+0207.502.992
+Gemeente Meeuwen-Gruitrode (voor 2019)
+Nee
+72040
+0216.773.224
+Gemeente Meise
+Ja
+23050
+0207.511.011
+Gemeente Melle
+Ja
+44040
+0207.453.009
+Gemeente Menen
+Ja
+34027
+0207.433.312
+Gemeente Merchtem
+Ja
+23052
+0207.511.110
+Gemeente Merelbeke
+Ja
+44043
+0207.453.207
+Gemeente Merksplas
+Ja
+13023
+0207.503.190
+Gemeente Mesen
+Ja
+33016
+0207.430.441
+Gemeente Meulebeke
+Ja
+37007
+0207.489.829
+Gemeente Middelkerke
+Ja
+35011
+0207.495.668
+Gemeente Moerbeke
+Ja
+44045
+0207.453.405
+Gemeente Mol
+Ja
+13025
+0207.503.388
+Gemeente Moorslede
+Ja
+36012
+0207.431.629
+Gemeente Mortsel
+Ja
+11029
+0207.536.646
+Gemeente Nazareth
+Ja
+44048
+0207.453.801
+Gemeente Neerpelt (voor 2019)
+Nee
+72025
+0207.473.694
+Gemeente Nevele (voor 2019)
+Nee
+44049
+0207.454.096
+Gemeente Niel
+Ja
+11030
+0207.536.151
+Gemeente Nieuwerkerken
+Ja
+71045
+0207.469.142
+Gemeente Nieuwpoort
+Ja
+38016
+0207.485.869
+Gemeente Nijlen
+Ja
+12026
+0206.636.526
+Gemeente Ninove
+Ja
+41048
+0207.441.527
+Gemeente Olen
+Ja
+13029
+0207.503.784
+Gemeente Oostende
+Ja
+35013
+0207.436.775
+Gemeente Oosterzele
+Ja
+44052
+0207.454.294
+Gemeente Oostkamp
+Ja
+31022
+0207.529.520
+Gemeente Oostrozebeke
+Ja
+37010
+0207.436.676
+Gemeente Opglabbeek (voor 2019)
+Nee
+71047
+0207.469.340
+Gemeente Opwijk
+Ja
+23060
+0207.511.803
+Gemeente Oud-Heverlee
+Ja
+24086
+0207.523.679
+Gemeente Oud-Turnhout
+Ja
+13031
+0207.503.982
+Gemeente Oudenaarde
+Ja
+45035
+0308.252.043
+Gemeente Oudenburg
+Ja
+35014
+0207.491.215
+Gemeente Oudsbergen
+Ja
+72042
+0697.609.251
+Gemeente Overijse
+Ja
+23062
+0207.512.001
+Gemeente Overpelt (voor 2019)
+Nee
+72029
+0207.474.090
+Gemeente Peer
+Ja
+72030
+0207.474.189
+Gemeente Pelt
+Ja
+72043
+0697.609.350
+Gemeente Pepingen
+Ja
+23064
+0207.512.197
+Gemeente Pittem
+Ja
+37011
+0207.432.916
+Gemeente Poperinge
+Ja
+33021
+0206.751.837
+Gemeente Putte
+Ja
+12029
+0207.499.727
+Gemeente Puurs (voor 2019)
+Nee
+12030
+0207.499.826
+Gemeente Puurs-Sint-Amands
+Ja
+12041
+0697.609.548
+Gemeente Ranst
+Ja
+11035
+0207.501.311
+Gemeente Ravels
+Ja
+13035
+0207.504.378
+Gemeente Retie
+Ja
+13036
+0207.504.477
+Gemeente Riemst
+Ja
+73066
+0207.480.921
+Gemeente Rijkevorsel
+Ja
+13037
+0207.504.576
+Gemeente Roeselare
+Ja
+36015
+0207.432.520
+Gemeente Ronse
+Ja
+45041
+0207.460.432
+Gemeente Roosdaal
+Ja
+23097
+0207.515.365
+Gemeente Rotselaar
+Ja
+24094
+0207.524.471
+Gemeente Ruiselede
+Ja
+37012
+0207.433.015
+Gemeente Rumst
+Ja
+11037
+0207.510.021
+Gemeente Schelle
+Ja
+11038
+0207.536.547
+Gemeente Scherpenheuvel-Zichem
+Ja
+24134
+0216.769.462
+Gemeente Schilde
+Ja
+11039
+0207.501.707
+Gemeente Schoten
+Ja
+11040
+0206.677.997
+Gemeente Sint-Amands (voor 2019)
+Nee
+12034
+0207.500.222
+Gemeente Sint-Genesius-Rode
+Ja
+23101
+0207.505.863
+Gemeente Sint-Gillis-Waas
+Ja
+46020
+0207.464.093
+Gemeente Sint-Katelijne-Waver
+Ja
+12035
+0207.509.724
+Gemeente Sint-Laureins
+Ja
+43014
+0207.448.851
+Gemeente Sint-Lievens-Houtem
+Ja
+41063
+0207.443.012
+Gemeente Sint-Martens-Latem
+Ja
+44064
+0207.542.782
+Gemeente Sint-Niklaas
+Ja
+46021
+0207.464.192
+Gemeente Sint-Pieters-Leeuw
+Ja
+23077
+0207.513.484
+Gemeente Sint-Truiden
+Ja
+71053
+0207.469.934
+Gemeente Spiere-Helkijn
+Ja
+34043
+0216.770.650
+Gemeente Stabroek
+Ja
+11044
+0207.537.834
+Gemeente Staden
+Ja
+36019
+0207.488.344
+Gemeente Steenokkerzeel
+Ja
+23081
+0206.561.993
+Gemeente Stekene
+Ja
+46024
+0207.464.489
+Gemeente Temse
+Ja
+46025
+0207.464.588
+Gemeente Ternat
+Ja
+23086
+0207.514.276
+Gemeente Tervuren
+Ja
+24104
+0207.525.461
+Gemeente Tessenderlo
+Ja
+71057
+0207.470.330
+Gemeente Tielt
+Ja
+37015
+0207.438.458
+Gemeente Tielt-Winge
+Ja
+24135
+0216.769.660
+Gemeente Tienen
+Ja
+24107
+0207.525.758
+Gemeente Tongeren
+Ja
+73083
+0207.067.482
+Gemeente Torhout
+Ja
+31033
+0207.530.609
+Gemeente Tremelo
+Ja
+24109
+0207.525.956
+Gemeente Turnhout
+Ja
+13040
+0207.533.082
+Gemeente Veurne
+Ja
+38025
+0207.494.579
+Gemeente Vilvoorde
+Ja
+23088
+0207.514.474
+Gemeente Vleteren
+Ja
+33041
+0216.770.452
+Gemeente Voeren
+Ja
+73109
+0216.773.422
+Gemeente Vorselaar
+Ja
+13044
+0207.215.160
+Gemeente Vosselaar
+Ja
+13046
+0207.534.765
+Gemeente Waarschoot (voor 2019)
+Nee
+44072
+0207.455.977
+Gemeente Waasmunster
+Ja
+42023
+0207.447.069
+Gemeente Wachtebeke
+Ja
+44073
+0207.456.076
+Gemeente Waregem
+Ja
+34040
+0207.433.708
+Gemeente Wellen
+Ja
+73098
+0207.483.691
+Gemeente Wemmel
+Ja
+23102
+0207.533.379
+Gemeente Wervik
+Ja
+33029
+0207.493.391
+Gemeente Westerlo
+Ja
+13049
+0207.505.566
+Gemeente Wetteren
+Ja
+42025
+0207.447.366
+Gemeente Wevelgem
+Ja
+34041
+0207.488.641
+Gemeente Wezembeek-Oppem
+Ja
+23103
+0207.506.061
+Gemeente Wichelen
+Ja
+42026
+0207.447.465
+Gemeente Wielsbeke
+Ja
+37017
+0207.437.864
+Gemeente Wijnegem
+Ja
+11050
+0207.533.775
+Gemeente Willebroek
+Ja
+12040
+0207.501.113
+Gemeente Wingene
+Ja
+37018
+0207.495.470
+Gemeente Wommelgem
+Ja
+11052
+0207.535.161
+Gemeente Wortegem-Petegem
+Ja
+45061
+0207.689.965
+Gemeente Wuustwezel
+Ja
+11053
+0207.537.735
+Gemeente Zandhoven
+Ja
+11054
+0207.539.220
+Gemeente Zaventem
+Ja
+23094
+0207.515.068
+Gemeente Zedelgem
+Ja
+31040
+0207.531.302
+Gemeente Zele
+Ja
+42028
+0207.447.663
+Gemeente Zelzate
+Ja
+43018
+0207.449.346
+Gemeente Zemst
+Ja
+23096
+0207.515.266
+Gemeente Zingem (voor 2019)
+Nee
+45057
+0207.461.917
+Gemeente Zoersel
+Ja
+11055
+0207.499.133
+Gemeente Zomergem (voor 2019)
+Nee
+44080
+0207.456.769
+Gemeente Zonhoven
+Ja
+71066
+0207.471.221
+Gemeente Zonnebeke
+Ja
+33037
+0207.432.124
+Gemeente Zottegem
+Ja
+41081
+0207.444.990
+Gemeente Zoutleeuw
+Ja
+24130
+0207.527.540
+Gemeente Zuienkerke
+Ja
+31042
+0207.531.597
+Gemeente Zulte
+Ja
+44081
+0207.456.868
+Gemeente Zutendaal
+Ja
+71067
+0207.471.320
+Gemeente Zwalm
+Ja
+45065
+0216.772.036
+Gemeente Zwevegem
+Ja
+34042
+0207.484.582
+Gemeente Zwijndrecht
+Ja
+11056
+0207.499.232
+Haven Antwerpen
+Ja
+V0050
+0248.399.380
+Haven Gent
+Ja
+V0016
+0218.843.678
+Haven Zeebrugge
+Ja
+V0040
+0205.097.392
+Infrabel
+Ja
+NMBS
+0869.763.267
+Limburg
+Ja
+ 
+OVO000549
+MOW - Afdeling Maritieme Toegang
+Ja
+V0010
+Anderewegbeheerders
+Nederland
+Ja
+ 
+Anderewegbeheerders
+NV De Scheepvaart
+Ja
+ 
+Anderewegbeheerders
+Onbekend
+Ja
+-8
+Anderewegbeheerders
+Oost-Vlaanderen
+Ja
+ 
+OVO000550
+Plantrecht
+Ja
+ 
+Anderewegbeheerders
+PrivaatBeheer
+Ja
+PARTIC
+Anderewegbeheerders
+Provincie Antwerpen
+Ja
+10000
+0207.725.597
+Provincie Henegouwen
+Ja
+ 
+0207.656.610
+Provincie Limburg
+Ja
+70000
+0207.725.203
+Provincie Luik
+Ja
+ 
+0207.725.104
+Provincie Luxemburg
+Ja
+ 
+0207.725.401
+Provincie Namen
+Ja
+ 
+0207.656.511
+Provincie Oost-Vlaanderen
+Ja
+40000
+0207.725.795
+Provincie Vlaams Brabant
+Ja
+20001
+0253.973.219
+Provincie Waals Brabant
+Ja
+ 
+0253.973.318
+Provincie West-Vlaanderen
+Ja
+30000
+0207.725.696
+Stad Brussel
+Ja
+21004
+Anderewegbeheerders
+Vlaams-Brabant
+Ja
+ 
+OVO000551
+Vlaamse Overheid
+Ja
+ 
+0207.725.104
+Waals Gewest
+Ja
+03000
+Anderewegbeheerders
+Waterwegen en Zeekanaal NV
+Nee
+V0012
+Anderewegbeheerders
+West-Vlaanderen
+Ja
+ 
+OVO000552
