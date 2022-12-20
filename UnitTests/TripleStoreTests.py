@@ -13,7 +13,8 @@ class TripleStoreTests(TestCase):
 
         relations_to_use = [URIRef('https://data.vlaanderen.be/ns/mobiliteit#omvatVerkeersbord'),
                             URIRef('https://data.vlaanderen.be/ns/mobiliteit#realiseert'),
-                            URIRef('https://data.vlaanderen.be/ns/mobiliteit#heeftVerkeersbordconcept')]
+                            URIRef('https://data.vlaanderen.be/ns/mobiliteit#heeftVerkeersbordconcept'),
+                            URIRef('https://data.vlaanderen.be/ns/mobiliteit#hoortBij')]
 
         result = store.get_all_related_triples(
             URIRef('https://apps.mow.vlaanderen.be/verkeersborden/rest/zi/verkeersborden/1044565'), # 102806 (simple)

@@ -19,6 +19,8 @@ class VkbFeatureToOSLOProcessor:
         self.graph.bind('geo', 'http://www.w3.org/2003/01/geo/wgs84_pos#')
         self.graph.bind('loc', 'http://www.w3.org/ns/locn#')
         self.graph.bind('skos', 'http://www.w3.org/2004/02/skos/core#')
+        self.graph.bind('weg', 'https://data.vlaanderen.be/ns/weg#')
+        self.graph.bind('org', 'http://www.w3.org/ns/org#')
 
         self.load_beheerders()
 
@@ -46,10 +48,10 @@ class VkbFeatureToOSLOProcessor:
         feature_objects = [opstelling_ref]
         onderborden = []
         for index, wegsegment_id in enumerate(feature.wegsegment_ids):
-            self.graph.add((
-                opstelling_ref, URIRef('https://data.vlaanderen.be/ns/mobiliteit#hoortBij'),
-                URIRef(
-                    f'https://www.vlaanderen.be/digitaal-vlaanderen/onze-oplossingen/wegenregister/{wegsegment_id}')))
+            segment_ref = URIRef(
+                    f'https://www.vlaanderen.be/digitaal-vlaanderen/onze-oplossingen/wegenregister/{wegsegment_id}')
+            self.graph.add((opstelling_ref, URIRef('https://data.vlaanderen.be/ns/mobiliteit#hoortBij'), segment_ref))
+            self.graph.add((segment_ref, RDF.type, URIRef('https://data.vlaanderen.be/ns/weg#Wegsegment')))
 
         for f_bord in feature.borden:
             bord_ref = URIRef(f'https://data.awvvlaanderen.be/id/asset/{feature.id}_bord_{f_bord.id}')

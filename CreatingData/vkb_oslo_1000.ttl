@@ -4,9 +4,11 @@
 @prefix mob: <https://data.vlaanderen.be/ns/mobiliteit#> .
 @prefix ns1: <https://schema.org/> .
 @prefix od: <https://data.vlaanderen.be/ns/openbaardomein#> .
+@prefix org: <http://www.w3.org/ns/org#> .
 @prefix orgvl: <https://data.vlaanderen.be/doc/organisatie/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vkb: <https://apps.mow.vlaanderen.be/verkeersborden/rest/zi/verkeersborden/> .
+@prefix weg: <https://data.vlaanderen.be/ns/weg#> .
 @prefix wr: <https://www.vlaanderen.be/digitaal-vlaanderen/onze-oplossingen/wegenregister/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -28132,33 +28134,1525 @@ asset:995737_bord_1752460_concept a mob:Verkeersbordconcept ;
 asset:995737_bord_1752460_teken a mob:Verkeersbord-Verkeersteken ;
     mob:heeftVerkeersbordconcept asset:995737_bord_1752460_concept .
 
-orgvl:OVO002006 a <http://www.w3.org/ns/org#Organization> .
+orgvl:OVO002006 a org:Organization .
 
-orgvl:OVO002049 a <http://www.w3.org/ns/org#Organization> .
+orgvl:OVO002049 a org:Organization .
 
-orgvl:OVO002062 a <http://www.w3.org/ns/org#Organization> .
+orgvl:OVO002062 a org:Organization .
 
-orgvl:OVO002075 a <http://www.w3.org/ns/org#Organization> .
+orgvl:OVO002075 a org:Organization .
 
-orgvl:OVO002110 a <http://www.w3.org/ns/org#Organization> .
+orgvl:OVO002110 a org:Organization .
 
-orgvl:OVO002120 a <http://www.w3.org/ns/org#Organization> .
+orgvl:OVO002120 a org:Organization .
 
-orgvl:OVO002167 a <http://www.w3.org/ns/org#Organization> .
+orgvl:OVO002167 a org:Organization .
 
-orgvl:OVO002168 a <http://www.w3.org/ns/org#Organization> .
+orgvl:OVO002168 a org:Organization .
 
-orgvl:OVO002203 a <http://www.w3.org/ns/org#Organization> .
+orgvl:OVO002203 a org:Organization .
 
-orgvl:OVO002215 a <http://www.w3.org/ns/org#Organization> .
+orgvl:OVO002215 a org:Organization .
 
-orgvl:OVO002229 a <http://www.w3.org/ns/org#Organization> .
+orgvl:OVO002229 a org:Organization .
 
-orgvl:OVO002233 a <http://www.w3.org/ns/org#Organization> .
+orgvl:OVO002233 a org:Organization .
 
-orgvl:OVO002271 a <http://www.w3.org/ns/org#Organization> .
+orgvl:OVO002271 a org:Organization .
 
-orgvl:OVO002298 a <http://www.w3.org/ns/org#Organization> .
+orgvl:OVO002298 a org:Organization .
+
+wr:1000593 a weg:Wegsegment .
+
+wr:1001089 a weg:Wegsegment .
+
+wr:1001090 a weg:Wegsegment .
+
+wr:1001492 a weg:Wegsegment .
+
+wr:1001605 a weg:Wegsegment .
+
+wr:1008116 a weg:Wegsegment .
+
+wr:1008327 a weg:Wegsegment .
+
+wr:1009738 a weg:Wegsegment .
+
+wr:1011296 a weg:Wegsegment .
+
+wr:1021611 a weg:Wegsegment .
+
+wr:1022805 a weg:Wegsegment .
+
+wr:1023254 a weg:Wegsegment .
+
+wr:1024741 a weg:Wegsegment .
+
+wr:1025044 a weg:Wegsegment .
+
+wr:1025063 a weg:Wegsegment .
+
+wr:1025066 a weg:Wegsegment .
+
+wr:1025119 a weg:Wegsegment .
+
+wr:1025342 a weg:Wegsegment .
+
+wr:1025550 a weg:Wegsegment .
+
+wr:1025645 a weg:Wegsegment .
+
+wr:1025804 a weg:Wegsegment .
+
+wr:1026026 a weg:Wegsegment .
+
+wr:1026248 a weg:Wegsegment .
+
+wr:1026256 a weg:Wegsegment .
+
+wr:1026784 a weg:Wegsegment .
+
+wr:1026794 a weg:Wegsegment .
+
+wr:1027867 a weg:Wegsegment .
+
+wr:1028390 a weg:Wegsegment .
+
+wr:1028578 a weg:Wegsegment .
+
+wr:1028862 a weg:Wegsegment .
+
+wr:1033391 a weg:Wegsegment .
+
+wr:1033527 a weg:Wegsegment .
+
+wr:1042045 a weg:Wegsegment .
+
+wr:1045668 a weg:Wegsegment .
+
+wr:1048734 a weg:Wegsegment .
+
+wr:1050114 a weg:Wegsegment .
+
+wr:1050467 a weg:Wegsegment .
+
+wr:1050492 a weg:Wegsegment .
+
+wr:1050649 a weg:Wegsegment .
+
+wr:1051191 a weg:Wegsegment .
+
+wr:1053409 a weg:Wegsegment .
+
+wr:1053603 a weg:Wegsegment .
+
+wr:1053698 a weg:Wegsegment .
+
+wr:1053766 a weg:Wegsegment .
+
+wr:1053865 a weg:Wegsegment .
+
+wr:1054245 a weg:Wegsegment .
+
+wr:1054356 a weg:Wegsegment .
+
+wr:1054383 a weg:Wegsegment .
+
+wr:1054390 a weg:Wegsegment .
+
+wr:1054729 a weg:Wegsegment .
+
+wr:1055051 a weg:Wegsegment .
+
+wr:1056508 a weg:Wegsegment .
+
+wr:1057574 a weg:Wegsegment .
+
+wr:1057752 a weg:Wegsegment .
+
+wr:1057835 a weg:Wegsegment .
+
+wr:1057900 a weg:Wegsegment .
+
+wr:1058358 a weg:Wegsegment .
+
+wr:1058604 a weg:Wegsegment .
+
+wr:1058770 a weg:Wegsegment .
+
+wr:1058833 a weg:Wegsegment .
+
+wr:1058917 a weg:Wegsegment .
+
+wr:1059887 a weg:Wegsegment .
+
+wr:1059940 a weg:Wegsegment .
+
+wr:1060094 a weg:Wegsegment .
+
+wr:1060120 a weg:Wegsegment .
+
+wr:1060712 a weg:Wegsegment .
+
+wr:1060730 a weg:Wegsegment .
+
+wr:1061441 a weg:Wegsegment .
+
+wr:1061565 a weg:Wegsegment .
+
+wr:1061567 a weg:Wegsegment .
+
+wr:1065482 a weg:Wegsegment .
+
+wr:1068513 a weg:Wegsegment .
+
+wr:1069275 a weg:Wegsegment .
+
+wr:1070718 a weg:Wegsegment .
+
+wr:1070746 a weg:Wegsegment .
+
+wr:1071126 a weg:Wegsegment .
+
+wr:1071348 a weg:Wegsegment .
+
+wr:1072545 a weg:Wegsegment .
+
+wr:1072626 a weg:Wegsegment .
+
+wr:1072972 a weg:Wegsegment .
+
+wr:1074394 a weg:Wegsegment .
+
+wr:1074670 a weg:Wegsegment .
+
+wr:1075491 a weg:Wegsegment .
+
+wr:1081343 a weg:Wegsegment .
+
+wr:1081691 a weg:Wegsegment .
+
+wr:1082397 a weg:Wegsegment .
+
+wr:1085175 a weg:Wegsegment .
+
+wr:1086886 a weg:Wegsegment .
+
+wr:1088887 a weg:Wegsegment .
+
+wr:1104723 a weg:Wegsegment .
+
+wr:1107159 a weg:Wegsegment .
+
+wr:1107165 a weg:Wegsegment .
+
+wr:1107410 a weg:Wegsegment .
+
+wr:1108222 a weg:Wegsegment .
+
+wr:1111274 a weg:Wegsegment .
+
+wr:1128796 a weg:Wegsegment .
+
+wr:1129860 a weg:Wegsegment .
+
+wr:1129915 a weg:Wegsegment .
+
+wr:1129982 a weg:Wegsegment .
+
+wr:1129987 a weg:Wegsegment .
+
+wr:1130442 a weg:Wegsegment .
+
+wr:1130459 a weg:Wegsegment .
+
+wr:1131588 a weg:Wegsegment .
+
+wr:1133817 a weg:Wegsegment .
+
+wr:1137110 a weg:Wegsegment .
+
+wr:1137312 a weg:Wegsegment .
+
+wr:1139376 a weg:Wegsegment .
+
+wr:1139494 a weg:Wegsegment .
+
+wr:1139744 a weg:Wegsegment .
+
+wr:1139838 a weg:Wegsegment .
+
+wr:1142643 a weg:Wegsegment .
+
+wr:1145926 a weg:Wegsegment .
+
+wr:1146565 a weg:Wegsegment .
+
+wr:1147035 a weg:Wegsegment .
+
+wr:1147132 a weg:Wegsegment .
+
+wr:1147421 a weg:Wegsegment .
+
+wr:1147434 a weg:Wegsegment .
+
+wr:1147436 a weg:Wegsegment .
+
+wr:1147821 a weg:Wegsegment .
+
+wr:1148241 a weg:Wegsegment .
+
+wr:1148855 a weg:Wegsegment .
+
+wr:1151761 a weg:Wegsegment .
+
+wr:1153878 a weg:Wegsegment .
+
+wr:120319 a weg:Wegsegment .
+
+wr:152175 a weg:Wegsegment .
+
+wr:165265 a weg:Wegsegment .
+
+wr:181379 a weg:Wegsegment .
+
+wr:198786 a weg:Wegsegment .
+
+wr:200267 a weg:Wegsegment .
+
+wr:230678 a weg:Wegsegment .
+
+wr:251880 a weg:Wegsegment .
+
+wr:252198 a weg:Wegsegment .
+
+wr:253179 a weg:Wegsegment .
+
+wr:254382 a weg:Wegsegment .
+
+wr:258320 a weg:Wegsegment .
+
+wr:260805 a weg:Wegsegment .
+
+wr:262597 a weg:Wegsegment .
+
+wr:262633 a weg:Wegsegment .
+
+wr:265921 a weg:Wegsegment .
+
+wr:266478 a weg:Wegsegment .
+
+wr:270281 a weg:Wegsegment .
+
+wr:271172 a weg:Wegsegment .
+
+wr:271273 a weg:Wegsegment .
+
+wr:272521 a weg:Wegsegment .
+
+wr:283873 a weg:Wegsegment .
+
+wr:287599 a weg:Wegsegment .
+
+wr:288382 a weg:Wegsegment .
+
+wr:292287 a weg:Wegsegment .
+
+wr:294701 a weg:Wegsegment .
+
+wr:297105 a weg:Wegsegment .
+
+wr:301894 a weg:Wegsegment .
+
+wr:307688 a weg:Wegsegment .
+
+wr:308979 a weg:Wegsegment .
+
+wr:310194 a weg:Wegsegment .
+
+wr:316136 a weg:Wegsegment .
+
+wr:316383 a weg:Wegsegment .
+
+wr:317080 a weg:Wegsegment .
+
+wr:317607 a weg:Wegsegment .
+
+wr:318104 a weg:Wegsegment .
+
+wr:320122 a weg:Wegsegment .
+
+wr:323907 a weg:Wegsegment .
+
+wr:326772 a weg:Wegsegment .
+
+wr:326785 a weg:Wegsegment .
+
+wr:328454 a weg:Wegsegment .
+
+wr:329142 a weg:Wegsegment .
+
+wr:330807 a weg:Wegsegment .
+
+wr:334625 a weg:Wegsegment .
+
+wr:337060 a weg:Wegsegment .
+
+wr:337916 a weg:Wegsegment .
+
+wr:343583 a weg:Wegsegment .
+
+wr:344537 a weg:Wegsegment .
+
+wr:352036 a weg:Wegsegment .
+
+wr:356589 a weg:Wegsegment .
+
+wr:369472 a weg:Wegsegment .
+
+wr:371466 a weg:Wegsegment .
+
+wr:374947 a weg:Wegsegment .
+
+wr:376176 a weg:Wegsegment .
+
+wr:378908 a weg:Wegsegment .
+
+wr:381655 a weg:Wegsegment .
+
+wr:389186 a weg:Wegsegment .
+
+wr:391633 a weg:Wegsegment .
+
+wr:392613 a weg:Wegsegment .
+
+wr:399390 a weg:Wegsegment .
+
+wr:401571 a weg:Wegsegment .
+
+wr:401572 a weg:Wegsegment .
+
+wr:405424 a weg:Wegsegment .
+
+wr:406085 a weg:Wegsegment .
+
+wr:406874 a weg:Wegsegment .
+
+wr:407289 a weg:Wegsegment .
+
+wr:409504 a weg:Wegsegment .
+
+wr:413803 a weg:Wegsegment .
+
+wr:413914 a weg:Wegsegment .
+
+wr:414292 a weg:Wegsegment .
+
+wr:414640 a weg:Wegsegment .
+
+wr:414643 a weg:Wegsegment .
+
+wr:419844 a weg:Wegsegment .
+
+wr:420426 a weg:Wegsegment .
+
+wr:422515 a weg:Wegsegment .
+
+wr:425884 a weg:Wegsegment .
+
+wr:430001 a weg:Wegsegment .
+
+wr:430083 a weg:Wegsegment .
+
+wr:431831 a weg:Wegsegment .
+
+wr:432264 a weg:Wegsegment .
+
+wr:433399 a weg:Wegsegment .
+
+wr:434183 a weg:Wegsegment .
+
+wr:434898 a weg:Wegsegment .
+
+wr:434916 a weg:Wegsegment .
+
+wr:437115 a weg:Wegsegment .
+
+wr:437395 a weg:Wegsegment .
+
+wr:438113 a weg:Wegsegment .
+
+wr:441711 a weg:Wegsegment .
+
+wr:442051 a weg:Wegsegment .
+
+wr:442842 a weg:Wegsegment .
+
+wr:444272 a weg:Wegsegment .
+
+wr:444278 a weg:Wegsegment .
+
+wr:445415 a weg:Wegsegment .
+
+wr:448059 a weg:Wegsegment .
+
+wr:448294 a weg:Wegsegment .
+
+wr:451450 a weg:Wegsegment .
+
+wr:452329 a weg:Wegsegment .
+
+wr:453121 a weg:Wegsegment .
+
+wr:453315 a weg:Wegsegment .
+
+wr:453518 a weg:Wegsegment .
+
+wr:460067 a weg:Wegsegment .
+
+wr:461469 a weg:Wegsegment .
+
+wr:461711 a weg:Wegsegment .
+
+wr:461731 a weg:Wegsegment .
+
+wr:462866 a weg:Wegsegment .
+
+wr:465290 a weg:Wegsegment .
+
+wr:465480 a weg:Wegsegment .
+
+wr:465555 a weg:Wegsegment .
+
+wr:466229 a weg:Wegsegment .
+
+wr:470446 a weg:Wegsegment .
+
+wr:473534 a weg:Wegsegment .
+
+wr:474199 a weg:Wegsegment .
+
+wr:474462 a weg:Wegsegment .
+
+wr:475916 a weg:Wegsegment .
+
+wr:478108 a weg:Wegsegment .
+
+wr:478637 a weg:Wegsegment .
+
+wr:479888 a weg:Wegsegment .
+
+wr:481139 a weg:Wegsegment .
+
+wr:481388 a weg:Wegsegment .
+
+wr:481799 a weg:Wegsegment .
+
+wr:482246 a weg:Wegsegment .
+
+wr:484309 a weg:Wegsegment .
+
+wr:486385 a weg:Wegsegment .
+
+wr:487300 a weg:Wegsegment .
+
+wr:487515 a weg:Wegsegment .
+
+wr:488677 a weg:Wegsegment .
+
+wr:490489 a weg:Wegsegment .
+
+wr:491493 a weg:Wegsegment .
+
+wr:492707 a weg:Wegsegment .
+
+wr:493882 a weg:Wegsegment .
+
+wr:494867 a weg:Wegsegment .
+
+wr:496009 a weg:Wegsegment .
+
+wr:498242 a weg:Wegsegment .
+
+wr:498967 a weg:Wegsegment .
+
+wr:499193 a weg:Wegsegment .
+
+wr:500070 a weg:Wegsegment .
+
+wr:500420 a weg:Wegsegment .
+
+wr:501482 a weg:Wegsegment .
+
+wr:502177 a weg:Wegsegment .
+
+wr:503558 a weg:Wegsegment .
+
+wr:504085 a weg:Wegsegment .
+
+wr:504497 a weg:Wegsegment .
+
+wr:505092 a weg:Wegsegment .
+
+wr:506611 a weg:Wegsegment .
+
+wr:508075 a weg:Wegsegment .
+
+wr:508412 a weg:Wegsegment .
+
+wr:508707 a weg:Wegsegment .
+
+wr:509297 a weg:Wegsegment .
+
+wr:509475 a weg:Wegsegment .
+
+wr:509999 a weg:Wegsegment .
+
+wr:511701 a weg:Wegsegment .
+
+wr:512391 a weg:Wegsegment .
+
+wr:512458 a weg:Wegsegment .
+
+wr:513117 a weg:Wegsegment .
+
+wr:516650 a weg:Wegsegment .
+
+wr:517009 a weg:Wegsegment .
+
+wr:517924 a weg:Wegsegment .
+
+wr:519084 a weg:Wegsegment .
+
+wr:519333 a weg:Wegsegment .
+
+wr:520836 a weg:Wegsegment .
+
+wr:521316 a weg:Wegsegment .
+
+wr:521667 a weg:Wegsegment .
+
+wr:527955 a weg:Wegsegment .
+
+wr:532689 a weg:Wegsegment .
+
+wr:533840 a weg:Wegsegment .
+
+wr:535713 a weg:Wegsegment .
+
+wr:538858 a weg:Wegsegment .
+
+wr:541071 a weg:Wegsegment .
+
+wr:541529 a weg:Wegsegment .
+
+wr:541760 a weg:Wegsegment .
+
+wr:541872 a weg:Wegsegment .
+
+wr:542169 a weg:Wegsegment .
+
+wr:543050 a weg:Wegsegment .
+
+wr:543109 a weg:Wegsegment .
+
+wr:544355 a weg:Wegsegment .
+
+wr:544387 a weg:Wegsegment .
+
+wr:545878 a weg:Wegsegment .
+
+wr:546050 a weg:Wegsegment .
+
+wr:546587 a weg:Wegsegment .
+
+wr:546694 a weg:Wegsegment .
+
+wr:547129 a weg:Wegsegment .
+
+wr:547897 a weg:Wegsegment .
+
+wr:550896 a weg:Wegsegment .
+
+wr:551699 a weg:Wegsegment .
+
+wr:555157 a weg:Wegsegment .
+
+wr:555370 a weg:Wegsegment .
+
+wr:555968 a weg:Wegsegment .
+
+wr:556498 a weg:Wegsegment .
+
+wr:556844 a weg:Wegsegment .
+
+wr:557231 a weg:Wegsegment .
+
+wr:557431 a weg:Wegsegment .
+
+wr:558085 a weg:Wegsegment .
+
+wr:559893 a weg:Wegsegment .
+
+wr:560713 a weg:Wegsegment .
+
+wr:562168 a weg:Wegsegment .
+
+wr:562340 a weg:Wegsegment .
+
+wr:563327 a weg:Wegsegment .
+
+wr:563564 a weg:Wegsegment .
+
+wr:566163 a weg:Wegsegment .
+
+wr:566929 a weg:Wegsegment .
+
+wr:567693 a weg:Wegsegment .
+
+wr:568022 a weg:Wegsegment .
+
+wr:568040 a weg:Wegsegment .
+
+wr:569567 a weg:Wegsegment .
+
+wr:570130 a weg:Wegsegment .
+
+wr:570676 a weg:Wegsegment .
+
+wr:571136 a weg:Wegsegment .
+
+wr:571196 a weg:Wegsegment .
+
+wr:571325 a weg:Wegsegment .
+
+wr:574253 a weg:Wegsegment .
+
+wr:574445 a weg:Wegsegment .
+
+wr:577579 a weg:Wegsegment .
+
+wr:578992 a weg:Wegsegment .
+
+wr:579831 a weg:Wegsegment .
+
+wr:580175 a weg:Wegsegment .
+
+wr:580624 a weg:Wegsegment .
+
+wr:580982 a weg:Wegsegment .
+
+wr:581749 a weg:Wegsegment .
+
+wr:585979 a weg:Wegsegment .
+
+wr:586104 a weg:Wegsegment .
+
+wr:586137 a weg:Wegsegment .
+
+wr:586214 a weg:Wegsegment .
+
+wr:586264 a weg:Wegsegment .
+
+wr:586507 a weg:Wegsegment .
+
+wr:586508 a weg:Wegsegment .
+
+wr:586564 a weg:Wegsegment .
+
+wr:590282 a weg:Wegsegment .
+
+wr:591002 a weg:Wegsegment .
+
+wr:591233 a weg:Wegsegment .
+
+wr:592733 a weg:Wegsegment .
+
+wr:594011 a weg:Wegsegment .
+
+wr:594410 a weg:Wegsegment .
+
+wr:596848 a weg:Wegsegment .
+
+wr:597037 a weg:Wegsegment .
+
+wr:598531 a weg:Wegsegment .
+
+wr:599695 a weg:Wegsegment .
+
+wr:599900 a weg:Wegsegment .
+
+wr:600748 a weg:Wegsegment .
+
+wr:600755 a weg:Wegsegment .
+
+wr:601155 a weg:Wegsegment .
+
+wr:602058 a weg:Wegsegment .
+
+wr:605426 a weg:Wegsegment .
+
+wr:605554 a weg:Wegsegment .
+
+wr:606885 a weg:Wegsegment .
+
+wr:606920 a weg:Wegsegment .
+
+wr:607534 a weg:Wegsegment .
+
+wr:609810 a weg:Wegsegment .
+
+wr:616525 a weg:Wegsegment .
+
+wr:616530 a weg:Wegsegment .
+
+wr:616898 a weg:Wegsegment .
+
+wr:617491 a weg:Wegsegment .
+
+wr:625747 a weg:Wegsegment .
+
+wr:626238 a weg:Wegsegment .
+
+wr:627312 a weg:Wegsegment .
+
+wr:627939 a weg:Wegsegment .
+
+wr:629333 a weg:Wegsegment .
+
+wr:629396 a weg:Wegsegment .
+
+wr:629418 a weg:Wegsegment .
+
+wr:634702 a weg:Wegsegment .
+
+wr:636660 a weg:Wegsegment .
+
+wr:636847 a weg:Wegsegment .
+
+wr:640264 a weg:Wegsegment .
+
+wr:641922 a weg:Wegsegment .
+
+wr:642380 a weg:Wegsegment .
+
+wr:643132 a weg:Wegsegment .
+
+wr:643218 a weg:Wegsegment .
+
+wr:643369 a weg:Wegsegment .
+
+wr:645918 a weg:Wegsegment .
+
+wr:646611 a weg:Wegsegment .
+
+wr:647156 a weg:Wegsegment .
+
+wr:647677 a weg:Wegsegment .
+
+wr:647949 a weg:Wegsegment .
+
+wr:648973 a weg:Wegsegment .
+
+wr:649995 a weg:Wegsegment .
+
+wr:650024 a weg:Wegsegment .
+
+wr:650167 a weg:Wegsegment .
+
+wr:650189 a weg:Wegsegment .
+
+wr:650539 a weg:Wegsegment .
+
+wr:650682 a weg:Wegsegment .
+
+wr:651030 a weg:Wegsegment .
+
+wr:651170 a weg:Wegsegment .
+
+wr:651756 a weg:Wegsegment .
+
+wr:653358 a weg:Wegsegment .
+
+wr:654034 a weg:Wegsegment .
+
+wr:654845 a weg:Wegsegment .
+
+wr:655259 a weg:Wegsegment .
+
+wr:655325 a weg:Wegsegment .
+
+wr:655538 a weg:Wegsegment .
+
+wr:656130 a weg:Wegsegment .
+
+wr:657100 a weg:Wegsegment .
+
+wr:657264 a weg:Wegsegment .
+
+wr:658369 a weg:Wegsegment .
+
+wr:659257 a weg:Wegsegment .
+
+wr:659290 a weg:Wegsegment .
+
+wr:666062 a weg:Wegsegment .
+
+wr:666072 a weg:Wegsegment .
+
+wr:666833 a weg:Wegsegment .
+
+wr:668449 a weg:Wegsegment .
+
+wr:668454 a weg:Wegsegment .
+
+wr:669417 a weg:Wegsegment .
+
+wr:671616 a weg:Wegsegment .
+
+wr:673862 a weg:Wegsegment .
+
+wr:674689 a weg:Wegsegment .
+
+wr:675709 a weg:Wegsegment .
+
+wr:676127 a weg:Wegsegment .
+
+wr:676200 a weg:Wegsegment .
+
+wr:676260 a weg:Wegsegment .
+
+wr:679137 a weg:Wegsegment .
+
+wr:679138 a weg:Wegsegment .
+
+wr:680357 a weg:Wegsegment .
+
+wr:680513 a weg:Wegsegment .
+
+wr:680917 a weg:Wegsegment .
+
+wr:681579 a weg:Wegsegment .
+
+wr:681959 a weg:Wegsegment .
+
+wr:682093 a weg:Wegsegment .
+
+wr:685398 a weg:Wegsegment .
+
+wr:685524 a weg:Wegsegment .
+
+wr:685873 a weg:Wegsegment .
+
+wr:687200 a weg:Wegsegment .
+
+wr:687926 a weg:Wegsegment .
+
+wr:689043 a weg:Wegsegment .
+
+wr:690595 a weg:Wegsegment .
+
+wr:692060 a weg:Wegsegment .
+
+wr:692069 a weg:Wegsegment .
+
+wr:694701 a weg:Wegsegment .
+
+wr:694929 a weg:Wegsegment .
+
+wr:697891 a weg:Wegsegment .
+
+wr:697975 a weg:Wegsegment .
+
+wr:698110 a weg:Wegsegment .
+
+wr:699262 a weg:Wegsegment .
+
+wr:699696 a weg:Wegsegment .
+
+wr:700730 a weg:Wegsegment .
+
+wr:701743 a weg:Wegsegment .
+
+wr:702662 a weg:Wegsegment .
+
+wr:704004 a weg:Wegsegment .
+
+wr:704394 a weg:Wegsegment .
+
+wr:704715 a weg:Wegsegment .
+
+wr:704790 a weg:Wegsegment .
+
+wr:705235 a weg:Wegsegment .
+
+wr:705617 a weg:Wegsegment .
+
+wr:708831 a weg:Wegsegment .
+
+wr:710394 a weg:Wegsegment .
+
+wr:711415 a weg:Wegsegment .
+
+wr:711934 a weg:Wegsegment .
+
+wr:712037 a weg:Wegsegment .
+
+wr:713701 a weg:Wegsegment .
+
+wr:714486 a weg:Wegsegment .
+
+wr:715008 a weg:Wegsegment .
+
+wr:716776 a weg:Wegsegment .
+
+wr:716806 a weg:Wegsegment .
+
+wr:720163 a weg:Wegsegment .
+
+wr:720755 a weg:Wegsegment .
+
+wr:721134 a weg:Wegsegment .
+
+wr:722350 a weg:Wegsegment .
+
+wr:723815 a weg:Wegsegment .
+
+wr:724397 a weg:Wegsegment .
+
+wr:725928 a weg:Wegsegment .
+
+wr:726056 a weg:Wegsegment .
+
+wr:726448 a weg:Wegsegment .
+
+wr:726725 a weg:Wegsegment .
+
+wr:727976 a weg:Wegsegment .
+
+wr:729024 a weg:Wegsegment .
+
+wr:729276 a weg:Wegsegment .
+
+wr:730545 a weg:Wegsegment .
+
+wr:730677 a weg:Wegsegment .
+
+wr:731252 a weg:Wegsegment .
+
+wr:732520 a weg:Wegsegment .
+
+wr:732567 a weg:Wegsegment .
+
+wr:735447 a weg:Wegsegment .
+
+wr:735536 a weg:Wegsegment .
+
+wr:736489 a weg:Wegsegment .
+
+wr:737646 a weg:Wegsegment .
+
+wr:738571 a weg:Wegsegment .
+
+wr:740676 a weg:Wegsegment .
+
+wr:740897 a weg:Wegsegment .
+
+wr:740941 a weg:Wegsegment .
+
+wr:744238 a weg:Wegsegment .
+
+wr:746970 a weg:Wegsegment .
+
+wr:747679 a weg:Wegsegment .
+
+wr:748166 a weg:Wegsegment .
+
+wr:750090 a weg:Wegsegment .
+
+wr:750857 a weg:Wegsegment .
+
+wr:751597 a weg:Wegsegment .
+
+wr:752559 a weg:Wegsegment .
+
+wr:753261 a weg:Wegsegment .
+
+wr:754410 a weg:Wegsegment .
+
+wr:756137 a weg:Wegsegment .
+
+wr:757164 a weg:Wegsegment .
+
+wr:757490 a weg:Wegsegment .
+
+wr:758355 a weg:Wegsegment .
+
+wr:758923 a weg:Wegsegment .
+
+wr:759260 a weg:Wegsegment .
+
+wr:760183 a weg:Wegsegment .
+
+wr:762687 a weg:Wegsegment .
+
+wr:763810 a weg:Wegsegment .
+
+wr:764611 a weg:Wegsegment .
+
+wr:765711 a weg:Wegsegment .
+
+wr:766080 a weg:Wegsegment .
+
+wr:767535 a weg:Wegsegment .
+
+wr:768293 a weg:Wegsegment .
+
+wr:769230 a weg:Wegsegment .
+
+wr:770244 a weg:Wegsegment .
+
+wr:770567 a weg:Wegsegment .
+
+wr:771675 a weg:Wegsegment .
+
+wr:775567 a weg:Wegsegment .
+
+wr:776247 a weg:Wegsegment .
+
+wr:777622 a weg:Wegsegment .
+
+wr:779432 a weg:Wegsegment .
+
+wr:779538 a weg:Wegsegment .
+
+wr:780700 a weg:Wegsegment .
+
+wr:780963 a weg:Wegsegment .
+
+wr:781703 a weg:Wegsegment .
+
+wr:781852 a weg:Wegsegment .
+
+wr:782721 a weg:Wegsegment .
+
+wr:783444 a weg:Wegsegment .
+
+wr:783966 a weg:Wegsegment .
+
+wr:788119 a weg:Wegsegment .
+
+wr:789149 a weg:Wegsegment .
+
+wr:792994 a weg:Wegsegment .
+
+wr:793416 a weg:Wegsegment .
+
+wr:793610 a weg:Wegsegment .
+
+wr:794680 a weg:Wegsegment .
+
+wr:794977 a weg:Wegsegment .
+
+wr:795319 a weg:Wegsegment .
+
+wr:795641 a weg:Wegsegment .
+
+wr:796375 a weg:Wegsegment .
+
+wr:798145 a weg:Wegsegment .
+
+wr:798716 a weg:Wegsegment .
+
+wr:799458 a weg:Wegsegment .
+
+wr:800136 a weg:Wegsegment .
+
+wr:802912 a weg:Wegsegment .
+
+wr:803644 a weg:Wegsegment .
+
+wr:806256 a weg:Wegsegment .
+
+wr:807094 a weg:Wegsegment .
+
+wr:807950 a weg:Wegsegment .
+
+wr:807983 a weg:Wegsegment .
+
+wr:810050 a weg:Wegsegment .
+
+wr:810094 a weg:Wegsegment .
+
+wr:810592 a weg:Wegsegment .
+
+wr:815637 a weg:Wegsegment .
+
+wr:815734 a weg:Wegsegment .
+
+wr:815783 a weg:Wegsegment .
+
+wr:823173 a weg:Wegsegment .
+
+wr:825912 a weg:Wegsegment .
+
+wr:827434 a weg:Wegsegment .
+
+wr:827521 a weg:Wegsegment .
+
+wr:827570 a weg:Wegsegment .
+
+wr:829858 a weg:Wegsegment .
+
+wr:832295 a weg:Wegsegment .
+
+wr:832296 a weg:Wegsegment .
+
+wr:832745 a weg:Wegsegment .
+
+wr:833114 a weg:Wegsegment .
+
+wr:835130 a weg:Wegsegment .
+
+wr:835664 a weg:Wegsegment .
+
+wr:836801 a weg:Wegsegment .
+
+wr:837594 a weg:Wegsegment .
+
+wr:838170 a weg:Wegsegment .
+
+wr:839026 a weg:Wegsegment .
+
+wr:839495 a weg:Wegsegment .
+
+wr:839670 a weg:Wegsegment .
+
+wr:839881 a weg:Wegsegment .
+
+wr:840691 a weg:Wegsegment .
+
+wr:840701 a weg:Wegsegment .
+
+wr:841820 a weg:Wegsegment .
+
+wr:842253 a weg:Wegsegment .
+
+wr:842356 a weg:Wegsegment .
+
+wr:842696 a weg:Wegsegment .
+
+wr:842998 a weg:Wegsegment .
+
+wr:843121 a weg:Wegsegment .
+
+wr:843196 a weg:Wegsegment .
+
+wr:843959 a weg:Wegsegment .
+
+wr:844288 a weg:Wegsegment .
+
+wr:844487 a weg:Wegsegment .
+
+wr:845161 a weg:Wegsegment .
+
+wr:847469 a weg:Wegsegment .
+
+wr:848980 a weg:Wegsegment .
+
+wr:849254 a weg:Wegsegment .
+
+wr:849379 a weg:Wegsegment .
+
+wr:849652 a weg:Wegsegment .
+
+wr:849803 a weg:Wegsegment .
+
+wr:852427 a weg:Wegsegment .
+
+wr:853312 a weg:Wegsegment .
+
+wr:853746 a weg:Wegsegment .
+
+wr:853848 a weg:Wegsegment .
+
+wr:854405 a weg:Wegsegment .
+
+wr:854547 a weg:Wegsegment .
+
+wr:855364 a weg:Wegsegment .
+
+wr:856489 a weg:Wegsegment .
+
+wr:856799 a weg:Wegsegment .
+
+wr:85866 a weg:Wegsegment .
+
+wr:859000 a weg:Wegsegment .
+
+wr:859143 a weg:Wegsegment .
+
+wr:859399 a weg:Wegsegment .
+
+wr:860796 a weg:Wegsegment .
+
+wr:861836 a weg:Wegsegment .
+
+wr:863744 a weg:Wegsegment .
+
+wr:866188 a weg:Wegsegment .
+
+wr:867219 a weg:Wegsegment .
+
+wr:867518 a weg:Wegsegment .
+
+wr:868047 a weg:Wegsegment .
+
+wr:868463 a weg:Wegsegment .
+
+wr:868608 a weg:Wegsegment .
+
+wr:869461 a weg:Wegsegment .
+
+wr:871916 a weg:Wegsegment .
+
+wr:871971 a weg:Wegsegment .
+
+wr:873039 a weg:Wegsegment .
+
+wr:874965 a weg:Wegsegment .
+
+wr:876198 a weg:Wegsegment .
+
+wr:876777 a weg:Wegsegment .
+
+wr:878213 a weg:Wegsegment .
+
+wr:878775 a weg:Wegsegment .
+
+wr:880435 a weg:Wegsegment .
+
+wr:880518 a weg:Wegsegment .
+
+wr:881279 a weg:Wegsegment .
+
+wr:881510 a weg:Wegsegment .
+
+wr:881633 a weg:Wegsegment .
+
+wr:883995 a weg:Wegsegment .
+
+wr:884201 a weg:Wegsegment .
+
+wr:885677 a weg:Wegsegment .
+
+wr:885895 a weg:Wegsegment .
+
+wr:886245 a weg:Wegsegment .
+
+wr:887295 a weg:Wegsegment .
+
+wr:888717 a weg:Wegsegment .
+
+wr:889500 a weg:Wegsegment .
+
+wr:891283 a weg:Wegsegment .
+
+wr:892158 a weg:Wegsegment .
+
+wr:892178 a weg:Wegsegment .
+
+wr:898748 a weg:Wegsegment .
+
+wr:900209 a weg:Wegsegment .
+
+wr:902596 a weg:Wegsegment .
+
+wr:903153 a weg:Wegsegment .
+
+wr:903741 a weg:Wegsegment .
+
+wr:904406 a weg:Wegsegment .
+
+wr:904478 a weg:Wegsegment .
+
+wr:904810 a weg:Wegsegment .
+
+wr:905230 a weg:Wegsegment .
+
+wr:905233 a weg:Wegsegment .
+
+wr:905241 a weg:Wegsegment .
+
+wr:905247 a weg:Wegsegment .
+
+wr:905479 a weg:Wegsegment .
+
+wr:906381 a weg:Wegsegment .
+
+wr:908486 a weg:Wegsegment .
+
+wr:913074 a weg:Wegsegment .
+
+wr:913376 a weg:Wegsegment .
+
+wr:913784 a weg:Wegsegment .
+
+wr:914580 a weg:Wegsegment .
+
+wr:915036 a weg:Wegsegment .
+
+wr:915453 a weg:Wegsegment .
+
+wr:916748 a weg:Wegsegment .
+
+wr:917732 a weg:Wegsegment .
+
+wr:918979 a weg:Wegsegment .
+
+wr:919622 a weg:Wegsegment .
+
+wr:919700 a weg:Wegsegment .
+
+wr:919996 a weg:Wegsegment .
+
+wr:920163 a weg:Wegsegment .
+
+wr:920753 a weg:Wegsegment .
+
+wr:922243 a weg:Wegsegment .
+
+wr:922888 a weg:Wegsegment .
+
+wr:923260 a weg:Wegsegment .
+
+wr:923642 a weg:Wegsegment .
+
+wr:924111 a weg:Wegsegment .
+
+wr:927098 a weg:Wegsegment .
+
+wr:927431 a weg:Wegsegment .
+
+wr:929494 a weg:Wegsegment .
+
+wr:930196 a weg:Wegsegment .
+
+wr:930697 a weg:Wegsegment .
+
+wr:931051 a weg:Wegsegment .
+
+wr:931389 a weg:Wegsegment .
+
+wr:932516 a weg:Wegsegment .
+
+wr:933275 a weg:Wegsegment .
+
+wr:934691 a weg:Wegsegment .
+
+wr:935087 a weg:Wegsegment .
+
+wr:937652 a weg:Wegsegment .
+
+wr:938330 a weg:Wegsegment .
+
+wr:939272 a weg:Wegsegment .
+
+wr:941004 a weg:Wegsegment .
+
+wr:941232 a weg:Wegsegment .
+
+wr:944141 a weg:Wegsegment .
+
+wr:945731 a weg:Wegsegment .
+
+wr:949935 a weg:Wegsegment .
+
+wr:950144 a weg:Wegsegment .
+
+wr:950503 a weg:Wegsegment .
+
+wr:951932 a weg:Wegsegment .
+
+wr:952164 a weg:Wegsegment .
+
+wr:954409 a weg:Wegsegment .
+
+wr:955624 a weg:Wegsegment .
+
+wr:957650 a weg:Wegsegment .
+
+wr:958264 a weg:Wegsegment .
+
+wr:958293 a weg:Wegsegment .
+
+wr:959871 a weg:Wegsegment .
+
+wr:960420 a weg:Wegsegment .
+
+wr:960879 a weg:Wegsegment .
+
+wr:961692 a weg:Wegsegment .
+
+wr:964800 a weg:Wegsegment .
+
+wr:965837 a weg:Wegsegment .
+
+wr:967430 a weg:Wegsegment .
+
+wr:967612 a weg:Wegsegment .
+
+wr:967616 a weg:Wegsegment .
+
+wr:968263 a weg:Wegsegment .
+
+wr:970386 a weg:Wegsegment .
+
+wr:970448 a weg:Wegsegment .
+
+wr:973342 a weg:Wegsegment .
+
+wr:975098 a weg:Wegsegment .
+
+wr:975166 a weg:Wegsegment .
+
+wr:975528 a weg:Wegsegment .
+
+wr:976710 a weg:Wegsegment .
+
+wr:977235 a weg:Wegsegment .
+
+wr:977712 a weg:Wegsegment .
+
+wr:978718 a weg:Wegsegment .
+
+wr:979045 a weg:Wegsegment .
+
+wr:979872 a weg:Wegsegment .
+
+wr:982585 a weg:Wegsegment .
+
+wr:986034 a weg:Wegsegment .
+
+wr:986635 a weg:Wegsegment .
+
+wr:988701 a weg:Wegsegment .
+
+wr:990364 a weg:Wegsegment .
+
+wr:991337 a weg:Wegsegment .
+
+wr:996060 a weg:Wegsegment .
+
+wr:996133 a weg:Wegsegment .
+
+wr:996135 a weg:Wegsegment .
+
+wr:998637 a weg:Wegsegment .
+
+wr:999409 a weg:Wegsegment .
+
+wr:999564 a weg:Wegsegment .
 
 asset:1044565_bord_1962970_teken a mob:Verkeersbord-Verkeersteken ;
     mob:heeftVerkeersbordconcept asset:1044565_bord_1962970_concept ;
@@ -28260,179 +29754,407 @@ asset:316940_bord_3006962_teken a mob:Verkeersbord-Verkeersteken ;
 asset:868476_bord_2262543_teken a mob:Verkeersbord-Verkeersteken ;
     mob:heeftVerkeersbordconcept asset:868476_bord_2262543_concept .
 
-orgvl:OVO001996 a <http://www.w3.org/ns/org#Organization> .
+orgvl:OVO001996 a org:Organization .
 
-orgvl:OVO002004 a <http://www.w3.org/ns/org#Organization> .
+orgvl:OVO002004 a org:Organization .
 
-orgvl:OVO002005 a <http://www.w3.org/ns/org#Organization> .
+orgvl:OVO002005 a org:Organization .
 
-orgvl:OVO002008 a <http://www.w3.org/ns/org#Organization> .
+orgvl:OVO002008 a org:Organization .
 
-orgvl:OVO002013 a <http://www.w3.org/ns/org#Organization> .
+orgvl:OVO002013 a org:Organization .
 
-orgvl:OVO002015 a <http://www.w3.org/ns/org#Organization> .
+orgvl:OVO002015 a org:Organization .
 
-orgvl:OVO002022 a <http://www.w3.org/ns/org#Organization> .
+orgvl:OVO002022 a org:Organization .
 
-orgvl:OVO002033 a <http://www.w3.org/ns/org#Organization> .
+orgvl:OVO002033 a org:Organization .
 
-orgvl:OVO002036 a <http://www.w3.org/ns/org#Organization> .
+orgvl:OVO002036 a org:Organization .
 
-orgvl:OVO002052 a <http://www.w3.org/ns/org#Organization> .
+orgvl:OVO002052 a org:Organization .
 
-orgvl:OVO002060 a <http://www.w3.org/ns/org#Organization> .
+orgvl:OVO002060 a org:Organization .
 
-orgvl:OVO002068 a <http://www.w3.org/ns/org#Organization> .
+orgvl:OVO002068 a org:Organization .
 
-orgvl:OVO002134 a <http://www.w3.org/ns/org#Organization> .
+orgvl:OVO002134 a org:Organization .
 
-orgvl:OVO002183 a <http://www.w3.org/ns/org#Organization> .
+orgvl:OVO002183 a org:Organization .
 
-orgvl:OVO002185 a <http://www.w3.org/ns/org#Organization> .
+orgvl:OVO002185 a org:Organization .
 
-orgvl:OVO002197 a <http://www.w3.org/ns/org#Organization> .
+orgvl:OVO002197 a org:Organization .
 
-orgvl:OVO002213 a <http://www.w3.org/ns/org#Organization> .
+orgvl:OVO002213 a org:Organization .
 
-orgvl:OVO002219 a <http://www.w3.org/ns/org#Organization> .
+orgvl:OVO002219 a org:Organization .
 
-orgvl:OVO002226 a <http://www.w3.org/ns/org#Organization> .
+orgvl:OVO002226 a org:Organization .
 
-orgvl:OVO002241 a <http://www.w3.org/ns/org#Organization> .
+orgvl:OVO002241 a org:Organization .
 
-orgvl:OVO002245 a <http://www.w3.org/ns/org#Organization> .
+orgvl:OVO002245 a org:Organization .
 
-orgvl:OVO002270 a <http://www.w3.org/ns/org#Organization> .
+orgvl:OVO002270 a org:Organization .
 
-orgvl:OVO002295 a <http://www.w3.org/ns/org#Organization> .
+orgvl:OVO002295 a org:Organization .
 
-orgvl:OVO000100 a <http://www.w3.org/ns/org#Organization> .
+wr:1024581 a weg:Wegsegment .
 
-orgvl:OVO000551 a <http://www.w3.org/ns/org#Organization> .
+wr:1024706 a weg:Wegsegment .
 
-orgvl:OVO001993 a <http://www.w3.org/ns/org#Organization> .
+wr:1024931 a weg:Wegsegment .
 
-orgvl:OVO002032 a <http://www.w3.org/ns/org#Organization> .
+wr:1050120 a weg:Wegsegment .
 
-orgvl:OVO002037 a <http://www.w3.org/ns/org#Organization> .
+wr:1050691 a weg:Wegsegment .
 
-orgvl:OVO002041 a <http://www.w3.org/ns/org#Organization> .
+wr:1051162 a weg:Wegsegment .
 
-orgvl:OVO002084 a <http://www.w3.org/ns/org#Organization> .
+wr:1053611 a weg:Wegsegment .
 
-orgvl:OVO002111 a <http://www.w3.org/ns/org#Organization> .
+wr:1053863 a weg:Wegsegment .
 
-orgvl:OVO002142 a <http://www.w3.org/ns/org#Organization> .
+wr:1053864 a weg:Wegsegment .
 
-orgvl:OVO002164 a <http://www.w3.org/ns/org#Organization> .
+wr:1054598 a weg:Wegsegment .
 
-orgvl:OVO002257 a <http://www.w3.org/ns/org#Organization> .
+wr:1054883 a weg:Wegsegment .
 
-orgvl:OVO002282 a <http://www.w3.org/ns/org#Organization> .
+wr:1055063 a weg:Wegsegment .
 
-orgvl:OVO002061 a <http://www.w3.org/ns/org#Organization> .
+wr:1075544 a weg:Wegsegment .
 
-orgvl:OVO002149 a <http://www.w3.org/ns/org#Organization> .
+wr:1086548 a weg:Wegsegment .
 
-orgvl:OVO002182 a <http://www.w3.org/ns/org#Organization> .
+wr:1146804 a weg:Wegsegment .
 
-orgvl:OVO002244 a <http://www.w3.org/ns/org#Organization> .
+wr:1147423 a weg:Wegsegment .
 
-orgvl:OVO039775 a <http://www.w3.org/ns/org#Organization> .
+wr:1148261 a weg:Wegsegment .
 
-orgvl:OVO000230 a <http://www.w3.org/ns/org#Organization> .
+wr:1149356 a weg:Wegsegment .
 
-orgvl:OVO002045 a <http://www.w3.org/ns/org#Organization> .
+wr:1149734 a weg:Wegsegment .
 
-orgvl:OVO002116 a <http://www.w3.org/ns/org#Organization> .
+wr:1154257 a weg:Wegsegment .
 
-orgvl:OVO002188 a <http://www.w3.org/ns/org#Organization> .
+wr:253511 a weg:Wegsegment .
 
-orgvl:OVO002237 a <http://www.w3.org/ns/org#Organization> .
+wr:292794 a weg:Wegsegment .
 
-orgvl:OVO002238 a <http://www.w3.org/ns/org#Organization> .
+wr:334773 a weg:Wegsegment .
 
-orgvl:OVO039780 a <http://www.w3.org/ns/org#Organization> .
+wr:359670 a weg:Wegsegment .
 
-orgvl:OVO001994 a <http://www.w3.org/ns/org#Organization> .
+wr:378521 a weg:Wegsegment .
 
-orgvl:OVO002078 a <http://www.w3.org/ns/org#Organization> .
+wr:379929 a weg:Wegsegment .
 
-orgvl:OVO002220 a <http://www.w3.org/ns/org#Organization> .
+wr:392474 a weg:Wegsegment .
 
-orgvl:OVO002254 a <http://www.w3.org/ns/org#Organization> .
+wr:401575 a weg:Wegsegment .
 
-orgvl:OVO011899 a <http://www.w3.org/ns/org#Organization> .
+wr:429921 a weg:Wegsegment .
 
-orgvl:OVO002172 a <http://www.w3.org/ns/org#Organization> .
+wr:432445 a weg:Wegsegment .
 
-orgvl:OVO002209 a <http://www.w3.org/ns/org#Organization> .
+wr:432702 a weg:Wegsegment .
 
-orgvl:OVO002265 a <http://www.w3.org/ns/org#Organization> .
+wr:433397 a weg:Wegsegment .
 
-orgvl:OVO001992 a <http://www.w3.org/ns/org#Organization> .
+wr:433398 a weg:Wegsegment .
 
-orgvl:OVO002277 a <http://www.w3.org/ns/org#Organization> .
+wr:434839 a weg:Wegsegment .
 
-orgvl:OVO002286 a <http://www.w3.org/ns/org#Organization> .
+wr:456424 a weg:Wegsegment .
 
-orgvl:OVO002292 a <http://www.w3.org/ns/org#Organization> .
+wr:458760 a weg:Wegsegment .
 
-orgvl:OVO002253 a <http://www.w3.org/ns/org#Organization> .
+wr:467362 a weg:Wegsegment .
 
-orgvl:OVO039698 a <http://www.w3.org/ns/org#Organization> .
+wr:486470 a weg:Wegsegment .
 
-orgvl:OVO002095 a <http://www.w3.org/ns/org#Organization> .
+wr:494168 a weg:Wegsegment .
 
-orgvl:OVO008379 a <http://www.w3.org/ns/org#Organization> .
+wr:503440 a weg:Wegsegment .
 
-orgvl:OVO001999 a <http://www.w3.org/ns/org#Organization> .
+wr:508992 a weg:Wegsegment .
 
-orgvl:OVO002221 a <http://www.w3.org/ns/org#Organization> .
+wr:516226 a weg:Wegsegment .
 
-orgvl:OVO039695 a <http://www.w3.org/ns/org#Organization> .
+wr:521737 a weg:Wegsegment .
 
-orgvl:OVO039787 a <http://www.w3.org/ns/org#Organization> .
+wr:542446 a weg:Wegsegment .
 
-orgvl:OVO002074 a <http://www.w3.org/ns/org#Organization> .
+wr:545451 a weg:Wegsegment .
 
-orgvl:OVO035239 a <http://www.w3.org/ns/org#Organization> .
+wr:550596 a weg:Wegsegment .
 
-orgvl:OVO038462 a <http://www.w3.org/ns/org#Organization> .
+wr:557858 a weg:Wegsegment .
 
-orgvl:OVO038468 a <http://www.w3.org/ns/org#Organization> .
+wr:567412 a weg:Wegsegment .
 
-orgvl:OVO008382 a <http://www.w3.org/ns/org#Organization> .
+wr:578990 a weg:Wegsegment .
 
-orgvl:OVO028757 a <http://www.w3.org/ns/org#Organization> .
+wr:592508 a weg:Wegsegment .
 
-orgvl:OVO038474 a <http://www.w3.org/ns/org#Organization> .
+wr:599028 a weg:Wegsegment .
 
-orgvl:OVO039784 a <http://www.w3.org/ns/org#Organization> .
+wr:599937 a weg:Wegsegment .
 
-orgvl:OVO043821 a <http://www.w3.org/ns/org#Organization> .
+wr:600731 a weg:Wegsegment .
 
-orgvl:OVO039824 a <http://www.w3.org/ns/org#Organization> .
+wr:611068 a weg:Wegsegment .
 
-orgvl:OVO028761 a <http://www.w3.org/ns/org#Organization> .
+wr:644990 a weg:Wegsegment .
 
-orgvl:OVO029060 a <http://www.w3.org/ns/org#Organization> .
+wr:646275 a weg:Wegsegment .
 
-orgvl:OVO039818 a <http://www.w3.org/ns/org#Organization> .
+wr:653103 a weg:Wegsegment .
 
-orgvl:OVO028758 a <http://www.w3.org/ns/org#Organization> .
+wr:653655 a weg:Wegsegment .
 
-orgvl:OVO039821 a <http://www.w3.org/ns/org#Organization> .
+wr:665218 a weg:Wegsegment .
 
-orgvl:OVO039727 a <http://www.w3.org/ns/org#Organization> .
+wr:679634 a weg:Wegsegment .
 
-orgvl:OVO028759 a <http://www.w3.org/ns/org#Organization> .
+wr:690833 a weg:Wegsegment .
 
-orgvl:OVO043610 a <http://www.w3.org/ns/org#Organization> .
+wr:695712 a weg:Wegsegment .
 
-orgvl:OVO039811 a <http://www.w3.org/ns/org#Organization> .
+wr:723933 a weg:Wegsegment .
 
-orgvl:OVO039716 a <http://www.w3.org/ns/org#Organization> .
+wr:730719 a weg:Wegsegment .
 
-orgvl:OVO002067 a <http://www.w3.org/ns/org#Organization> .
+wr:738616 a weg:Wegsegment .
+
+wr:739088 a weg:Wegsegment .
+
+wr:740323 a weg:Wegsegment .
+
+wr:741697 a weg:Wegsegment .
+
+wr:744209 a weg:Wegsegment .
+
+wr:747316 a weg:Wegsegment .
+
+wr:755991 a weg:Wegsegment .
+
+wr:756209 a weg:Wegsegment .
+
+wr:770579 a weg:Wegsegment .
+
+wr:771349 a weg:Wegsegment .
+
+wr:782606 a weg:Wegsegment .
+
+wr:796492 a weg:Wegsegment .
+
+wr:843725 a weg:Wegsegment .
+
+wr:848000 a weg:Wegsegment .
+
+wr:857914 a weg:Wegsegment .
+
+wr:861553 a weg:Wegsegment .
+
+wr:862410 a weg:Wegsegment .
+
+wr:878426 a weg:Wegsegment .
+
+wr:914091 a weg:Wegsegment .
+
+wr:921998 a weg:Wegsegment .
+
+wr:924203 a weg:Wegsegment .
+
+wr:928520 a weg:Wegsegment .
+
+wr:955244 a weg:Wegsegment .
+
+wr:960111 a weg:Wegsegment .
+
+wr:968196 a weg:Wegsegment .
+
+wr:977875 a weg:Wegsegment .
+
+wr:995058 a weg:Wegsegment .
+
+orgvl:OVO000100 a org:Organization .
+
+orgvl:OVO000551 a org:Organization .
+
+orgvl:OVO001993 a org:Organization .
+
+orgvl:OVO002032 a org:Organization .
+
+orgvl:OVO002037 a org:Organization .
+
+orgvl:OVO002041 a org:Organization .
+
+orgvl:OVO002084 a org:Organization .
+
+orgvl:OVO002111 a org:Organization .
+
+orgvl:OVO002142 a org:Organization .
+
+orgvl:OVO002164 a org:Organization .
+
+orgvl:OVO002257 a org:Organization .
+
+orgvl:OVO002282 a org:Organization .
+
+wr:318107 a weg:Wegsegment .
+
+wr:403166 a weg:Wegsegment .
+
+wr:430096 a weg:Wegsegment .
+
+wr:441710 a weg:Wegsegment .
+
+wr:460409 a weg:Wegsegment .
+
+wr:480511 a weg:Wegsegment .
+
+wr:526133 a weg:Wegsegment .
+
+wr:548347 a weg:Wegsegment .
+
+wr:553788 a weg:Wegsegment .
+
+wr:642984 a weg:Wegsegment .
+
+wr:669855 a weg:Wegsegment .
+
+wr:700957 a weg:Wegsegment .
+
+wr:858924 a weg:Wegsegment .
+
+wr:884457 a weg:Wegsegment .
+
+wr:975682 a weg:Wegsegment .
+
+orgvl:OVO002061 a org:Organization .
+
+orgvl:OVO002149 a org:Organization .
+
+orgvl:OVO002182 a org:Organization .
+
+orgvl:OVO002244 a org:Organization .
+
+orgvl:OVO039775 a org:Organization .
+
+wr:1025653 a weg:Wegsegment .
+
+wr:1142727 a weg:Wegsegment .
+
+wr:744225 a weg:Wegsegment .
+
+wr:744379 a weg:Wegsegment .
+
+wr:807649 a weg:Wegsegment .
+
+wr:909919 a weg:Wegsegment .
+
+orgvl:OVO000230 a org:Organization .
+
+orgvl:OVO002045 a org:Organization .
+
+orgvl:OVO002116 a org:Organization .
+
+orgvl:OVO002188 a org:Organization .
+
+orgvl:OVO002237 a org:Organization .
+
+orgvl:OVO002238 a org:Organization .
+
+orgvl:OVO039780 a org:Organization .
+
+orgvl:OVO001994 a org:Organization .
+
+orgvl:OVO002078 a org:Organization .
+
+orgvl:OVO002220 a org:Organization .
+
+orgvl:OVO002254 a org:Organization .
+
+orgvl:OVO011899 a org:Organization .
+
+orgvl:OVO002172 a org:Organization .
+
+orgvl:OVO002209 a org:Organization .
+
+orgvl:OVO002265 a org:Organization .
+
+orgvl:OVO001992 a org:Organization .
+
+orgvl:OVO002277 a org:Organization .
+
+orgvl:OVO002286 a org:Organization .
+
+orgvl:OVO002292 a org:Organization .
+
+wr:376083 a weg:Wegsegment .
+
+orgvl:OVO002253 a org:Organization .
+
+orgvl:OVO039698 a org:Organization .
+
+orgvl:OVO002095 a org:Organization .
+
+wr:966119 a weg:Wegsegment .
+
+orgvl:OVO008379 a org:Organization .
+
+orgvl:OVO001999 a org:Organization .
+
+orgvl:OVO002221 a org:Organization .
+
+orgvl:OVO039695 a org:Organization .
+
+orgvl:OVO039787 a org:Organization .
+
+orgvl:OVO002074 a org:Organization .
+
+orgvl:OVO035239 a org:Organization .
+
+orgvl:OVO038462 a org:Organization .
+
+orgvl:OVO038468 a org:Organization .
+
+orgvl:OVO008382 a org:Organization .
+
+orgvl:OVO028757 a org:Organization .
+
+orgvl:OVO038474 a org:Organization .
+
+orgvl:OVO039784 a org:Organization .
+
+orgvl:OVO043821 a org:Organization .
+
+orgvl:OVO039824 a org:Organization .
+
+orgvl:OVO028761 a org:Organization .
+
+orgvl:OVO029060 a org:Organization .
+
+orgvl:OVO039818 a org:Organization .
+
+orgvl:OVO028758 a org:Organization .
+
+orgvl:OVO039821 a org:Organization .
+
+orgvl:OVO039727 a org:Organization .
+
+orgvl:OVO028759 a org:Organization .
+
+orgvl:OVO043610 a org:Organization .
+
+orgvl:OVO039811 a org:Organization .
+
+orgvl:OVO039716 a org:Organization .
+
+orgvl:OVO002067 a org:Organization .
 
