@@ -2,12 +2,8 @@ import json
 import math
 from datetime import datetime
 
-from termcolor import colored
-
-from CreatingData.DataHelpers.VkbBevestiging import VkbBevestiging
 from CreatingData.DataHelpers.VkbBord import VkbBord
 from CreatingData.DataHelpers.VkbFeature import VkbFeature
-from CreatingData.DataHelpers.VkbSteun import VkbSteun
 
 
 class JsonToVkbFeatureProcessor:

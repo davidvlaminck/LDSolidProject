@@ -73,12 +73,57 @@ class Format(str, Enum):
     jsonld = 'jsonld'
 
 
+@app.get("/opstelling/wegsegment", response_class=Response)
+async def get_opstelling_by_wegsegment(wegsegment: str, format: Format = Format.ttl):
+
+    for s, p, o in triple_store_api.store.get_graph(store_source):
+        if p == URIRef('https://data.vlaanderen.be/ns/mobiliteit#hoortBij'):
+            print(f'{s} {p} {o}')
+
+    return None
+
+    start = time.time()
+    triples = triple_store_api.get_opstellingen_by_bounds(lower_lat, lower_long, upper_lat, upper_long)
+    end = time.time()
+    time_spent = round(end - start, 3)
+    print(f'Time to process query: {time_spent}')
+
+    h = await triple_store_api.create_graph_from_triples(triples)
+
+    if format in [Format.json, Format.jsonld]:
+        json_content = h.serialize(format='json-ld')
+        return ORJSONResponse(json.loads(json_content))
+    elif format in [Format.ttl, Format.turtle]:
+        ttl_content = h.serialize(format='turtle')
+        return Response(ttl_content)
+
+
+@app.get("/opstelling/bounds", response_class=Response)
+async def get_opstelling_by_bounds(lower_lat: float, lower_long: float, upper_lat: float, upper_long: float,
+                                   format: Format = Format.ttl):
+    start = time.time()
+    triples = triple_store_api.get_opstellingen_by_bounds(lower_lat, lower_long, upper_lat, upper_long)
+    end = time.time()
+    time_spent = round(end - start, 3)
+    print(f'Time to process query: {time_spent}')
+
+    h = await triple_store_api.create_graph_from_triples(triples)
+
+    if format in [Format.json, Format.jsonld]:
+        json_content = h.serialize(format='json-ld')
+        return ORJSONResponse(json.loads(json_content))
+    elif format in [Format.ttl, Format.turtle]:
+        ttl_content = h.serialize(format='turtle')
+        return Response(ttl_content)
+
+
 @app.get("/opstelling/{id}", response_class=Response)
-async def get_asset(request: Request, format: Format = Format.ttl, id: str = ''):
+async def get_opstelling_by_id(request: Request, format: Format = Format.ttl, id: str = ''):
     start = time.time()
     triples = triple_store_api.get_full_opstelling_triples(id)
     end = time.time()
     time_spent = round(end - start, 3)
+    print(f'Time to process query: {time_spent}')
 
     if 'text/html' in request.headers['accept']:
         html_page = HTMLTemplater.get_opstelling_html(id, triples)
@@ -87,7 +132,7 @@ async def get_asset(request: Request, format: Format = Format.ttl, id: str = '')
 
         return HTMLResponse(content=html_page)
     else:
-        h = await create_graph_from_triples(triples)
+        h = await triple_store_api.create_graph_from_triples(triples)
 
         if format in [Format.json, Format.jsonld]:
             json_content = h.serialize(format='json-ld')
@@ -97,15 +142,8 @@ async def get_asset(request: Request, format: Format = Format.ttl, id: str = '')
             return Response(ttl_content)
 
 
-async def create_graph_from_triples(triples):
-    g = Graph()
-    for triple in triples:
-        g.add(triple)
-    return g
-
-
 @app.get("/opstelling/{asset_id}/visualize", response_class=HTMLResponse)
-async def get_asset(asset_id: str = ''):
+async def visualize_opstelling_by_id(asset_id: str = ''):
     start = time.time()
     relations_to_use = [URIRef('https://data.vlaanderen.be/ns/mobiliteit#omvatVerkeersbord'),
                         URIRef('https://data.vlaanderen.be/ns/mobiliteit#realiseert'),
@@ -115,7 +153,7 @@ async def get_asset(asset_id: str = ''):
         use_relations=relations_to_use)
 
     end = time.time()
-    time_spent = round(end - start, 2)
+    time_spent = round(end - start, 3)
     print(f'Time to process query: {time_spent}')
 
     triple_lines = []

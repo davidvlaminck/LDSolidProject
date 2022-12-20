@@ -1,6 +1,6 @@
 from typing import Generator
 
-from rdflib import URIRef, BNode
+from rdflib import URIRef, BNode, Graph, Namespace
 
 from TripleAPI.TripleStore import TripleStore
 
@@ -35,6 +35,42 @@ class TripleStoreAPI:
 
         return self.store.perform_sparql_query(query=query)
 
+    @staticmethod
+    async def create_graph_from_triples(triples):
+        g = Graph()
+        g.bind('mob', Namespace('https://data.vlaanderen.be/ns/mobiliteit#'))
+        g.bind('vkb', Namespace('https://apps.mow.vlaanderen.be/verkeersborden/rest/zi/verkeersborden/'))
+        g.bind('asset', Namespace('https://data.awvvlaanderen.be/id/asset/'))
+        g.bind('wr',
+               Namespace('https://www.vlaanderen.be/digitaal-vlaanderen/onze-oplossingen/wegenregister/'))
+        g.bind('orgvl', 'https://data.vlaanderen.be/doc/organisatie/')
+        g.bind('od', 'https://data.vlaanderen.be/ns/openbaardomein#')
+        g.bind('geo', 'http://www.w3.org/2003/01/geo/wgs84_pos#')
+        g.bind('loc', 'http://www.w3.org/ns/locn#')
+        g.bind('skos', 'http://www.w3.org/2004/02/skos/core#')
+        g.bind('weg', 'https://data.vlaanderen.be/ns/weg#')
+        g.bind('org', 'http://www.w3.org/ns/org#')
+        for triple in triples:
+            g.add(triple)
+        return g
+
+    def get_opstellingen_by_bounds(self, lower_lat: float, lower_long: float, upper_lat: float, upper_long: float):
+        query = '''
+prefix mob: <https://data.vlaanderen.be/ns/mobiliteit#>
+prefix loc: <http://www.w3.org/ns/locn#>
+prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+
+SELECT ?s
+WHERE {
+    ?s loc:geometry ?g .
+    ?g geo:lat ?lat .
+    ?g geo:long ?long .''' + \
+                f'FILTER ({lower_lat} < ?lat && ?lat < {upper_lat} && {lower_long} < ?long && ?long < {upper_long}) .' \
+                + '}'
+        results = self.perform_sparql_query(query)
+        for row in results['data']:
+            yield from self.yield_triples_found_by_subject(URIRef(row[0]))
+
     def get_asset_triples(self, asset_id: str) -> Generator:
         if self.store.get_graph(self.source) is None:
             raise RuntimeError('There is no datasource loaded yet')
@@ -68,5 +104,3 @@ class TripleStoreAPI:
         yield from self.get_all_related_triples(
             asset_ref=URIRef('https://apps.mow.vlaanderen.be/verkeersborden/rest/zi/verkeersborden/' + id),
             use_relations=relations_to_use)
-
-
