@@ -74,16 +74,9 @@ class Format(str, Enum):
 
 
 @app.get("/opstelling/wegsegment", response_class=Response)
-async def get_opstelling_by_wegsegment(wegsegment: str, format: Format = Format.ttl):
-
-    for s, p, o in triple_store_api.store.get_graph(store_source):
-        if p == URIRef('https://data.vlaanderen.be/ns/mobiliteit#hoortBij'):
-            print(f'{s} {p} {o}')
-
-    return None
-
+async def get_opstelling_by_wegsegment(wegsegment_id: str, format: Format = Format.ttl):
     start = time.time()
-    triples = triple_store_api.get_opstellingen_by_bounds(lower_lat, lower_long, upper_lat, upper_long)
+    triples = triple_store_api.get_opstellingen_by_wegsegment(wegsegment_id)
     end = time.time()
     time_spent = round(end - start, 3)
     print(f'Time to process query: {time_spent}')

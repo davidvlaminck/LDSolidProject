@@ -71,6 +71,15 @@ WHERE {
         for row in results['data']:
             yield from self.yield_triples_found_by_subject(URIRef(row[0]))
 
+    def get_opstellingen_by_wegsegment(self, wegsegment_id: str):
+        graph = self.store.get_graph(self.source)
+        results = graph.subjects(predicate=URIRef('https://data.vlaanderen.be/ns/mobiliteit#hoortBij'),
+                                 object=URIRef('https://www.vlaanderen.be/digitaal-vlaanderen/onze-oplossingen/'
+                                               f'wegenregister/{wegsegment_id}'))
+
+        for opstelling in results:
+            yield from self.yield_triples_found_by_subject(opstelling)
+
     def get_asset_triples(self, asset_id: str) -> Generator:
         if self.store.get_graph(self.source) is None:
             raise RuntimeError('There is no datasource loaded yet')

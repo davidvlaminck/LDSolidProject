@@ -3,7 +3,7 @@ from rdflib import Graph
 
 class TripleStore:
     def __init__(self):
-        self._graph = None
+        self._graph: Graph = None
         self._source = None
 
     def get_graph(self, source=None):

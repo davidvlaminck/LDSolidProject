@@ -31,6 +31,14 @@ class TripleStoreTests(TestCase):
         for triple in triple_api.get_opstellingen_by_bounds(lower_lat=51.03, lower_long=3.65, upper_lat=51.05, upper_long=3.75):
             print(triple)
 
+    def test_get_opstellingen_by_wegsegment(self):
+        store = TripleStore()
+        store_source = 'CreatingData/vkb_oslo_1000.ttl'
+        store.get_graph(store_source)
+        triple_api = TripleStoreAPI(store)
+        for triple in triple_api.get_opstellingen_by_wegsegment(wegsegment_id='665218'):
+            print(triple)
+
 
 # example query for bounds
 """
