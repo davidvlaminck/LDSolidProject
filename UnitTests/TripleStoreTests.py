@@ -23,12 +23,21 @@ class TripleStoreTests(TestCase):
         for s, p, o in result:
             print(f'{s} {p} {o}')
 
+    def test_get_opstellingen_by_bounds_by_sparql(self):
+        store = TripleStore()
+        store_source = 'CreatingData/vkb_oslo_1000.ttl'
+        store.get_graph(store_source)
+        triple_api = TripleStoreAPI(store)
+        for triple in triple_api.get_opstellingen_by_bounds_by_sparql(lower_lat=51.03, lower_long=3.65, upper_lat=51.05, upper_long=3.75):
+            print(triple)
+
     def test_get_opstellingen_by_bounds(self):
         store = TripleStore()
         store_source = 'CreatingData/vkb_oslo_1000.ttl'
         store.get_graph(store_source)
         triple_api = TripleStoreAPI(store)
-        for triple in triple_api.get_opstellingen_by_bounds(lower_lat=51.03, lower_long=3.65, upper_lat=51.05, upper_long=3.75):
+        for triple in triple_api.get_opstellingen_by_bounds(lower_lat=51.03, lower_long=3.65, upper_lat=51.05,
+                                                            upper_long=3.75):
             print(triple)
 
     def test_get_opstellingen_by_wegsegment(self):
@@ -37,6 +46,37 @@ class TripleStoreTests(TestCase):
         store.get_graph(store_source)
         triple_api = TripleStoreAPI(store)
         for triple in triple_api.get_opstellingen_by_wegsegment(wegsegment_id='665218'):
+            print(triple)
+
+    def test_query_30k(self):
+        store = TripleStore()
+        store_source = 'CreatingData/vkb_oslo_30k.ttl'
+        graph = store.get_graph(store_source)
+
+        q = """SELECT ?s ?p ?o
+WHERE { 
+?s ?p ?o .
+FILTER(?s = <https://apps.mow.vlaanderen.be/verkeersborden/rest/zi/verkeersborden/102806>)
+}
+"""
+        results = graph.query(q)
+        for triple in results:
+            print(triple)
+
+    def test_query_1000(self):
+        store = TripleStore()
+        store_source = 'CreatingData/vkb_oslo_1000.ttl'
+        graph = store.get_graph(store_source)
+
+        q = """SELECT ?s ?segment
+WHERE { 
+?s a <https://data.vlaanderen.be/ns/mobiliteit#Opstelling> .
+?s <https://data.vlaanderen.be/ns/mobiliteit#hoortBij> ?segment .
+FILTER (?segment = <https://www.vlaanderen.be/digitaal-vlaanderen/onze-oplossingen/wegenregister/966119>)    
+}
+"""
+        results = graph.query(q)
+        for triple in results:
             print(triple)
 
 
@@ -54,3 +94,10 @@ WHERE {
   ?g geo:long ?long .
   FILTER (51.03 < ?lat && ?lat < 51.05 && 3.65 < ?long && ?long < 3.75) .
 }"""
+
+"""SELECT ?s ?p ?o
+WHERE { 
+?s ?p ?o .
+FILTER(?s = <https://apps.mow.vlaanderen.be/verkeersborden/rest/zi/verkeersborden/1239260>)
+}
+"""

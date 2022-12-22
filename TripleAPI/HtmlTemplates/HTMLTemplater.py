@@ -68,6 +68,7 @@ class HTMLTemplater:
                     <h4>Triple representation</h4>
                     {triple_table}
                 <p>Took $time_spent$ seconds to generate</p>
+                <a href='http://127.0.0.1:8000/opstelling/{id}/visualize'>Visualize results in D3</a>
                 </body>
             </html>
             """

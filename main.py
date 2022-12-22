@@ -6,12 +6,12 @@ from enum import Enum
 import pyparsing
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import ORJSONResponse
-from rdflib import Graph, URIRef
+from rdflib import URIRef
 from starlette.middleware.cors import CORSMiddleware
 from starlette.requests import Request
 from starlette.responses import HTMLResponse, Response
 
-from TripleAPI.HTMLTemplater import HTMLTemplater
+from TripleAPI.HtmlTemplates.HTMLTemplater import HTMLTemplater
 from TripleAPI.HtmlTemplates import VisualizeD3
 from TripleAPI.TripleStore import TripleStore
 from TripleAPI.TripleStoreAPI import TripleStoreAPI
@@ -31,7 +31,7 @@ app.add_middleware(
 )
 
 store = TripleStore()
-store_source = 'CreatingData/vkb_oslo_1000.ttl'
+store_source = 'CreatingData/vkb_oslo_30k.ttl'
 api_start = time.time()
 store.get_graph(store_source)
 api_end = time.time()
@@ -48,12 +48,11 @@ async def root():
 @app.get("/sparql", response_class=Response)
 async def sparql(request: Request, query: str = ''):
     if 'text/html' in request.headers['accept']:
-        with open('TripleAPI/HtmlSparql.html', 'r+') as f:
+        with open('TripleAPI/HtmlTemplates/HtmlSparql.html', 'r+') as f:
             html_str = f.read()
         return html_str
     else:
         encoder = json.encoder.JSONEncoder()
-        print(f'query: {query}')
         try:
             result = encoder.encode(o=triple_store_api.perform_sparql_query(query))
         except PermissionError:
@@ -96,6 +95,25 @@ async def get_opstelling_by_bounds(lower_lat: float, lower_long: float, upper_la
                                    format: Format = Format.ttl):
     start = time.time()
     triples = triple_store_api.get_opstellingen_by_bounds(lower_lat, lower_long, upper_lat, upper_long)
+    end = time.time()
+    time_spent = round(end - start, 3)
+    print(f'Time to process query: {time_spent}')
+
+    h = await triple_store_api.create_graph_from_triples(triples)
+
+    if format in [Format.json, Format.jsonld]:
+        json_content = h.serialize(format='json-ld')
+        return ORJSONResponse(json.loads(json_content))
+    elif format in [Format.ttl, Format.turtle]:
+        ttl_content = h.serialize(format='turtle')
+        return Response(ttl_content)
+
+
+@app.get("/opstelling/bounds_sparql", response_class=Response)
+async def get_opstelling_by_bounds_sparql(lower_lat: float, lower_long: float, upper_lat: float, upper_long: float,
+                                   format: Format = Format.ttl):
+    start = time.time()
+    triples = triple_store_api.get_opstellingen_by_bounds_by_sparql(lower_lat, lower_long, upper_lat, upper_long)
     end = time.time()
     time_spent = round(end - start, 3)
     print(f'Time to process query: {time_spent}')

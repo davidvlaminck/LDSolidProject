@@ -1,3 +1,4 @@
+import re
 from typing import Generator
 
 from rdflib import URIRef, BNode, Graph, Namespace
@@ -20,18 +21,11 @@ class TripleStoreAPI:
             query = query.replace('\r', ' ')
         while '  ' in query:
             query = query.replace('  ', ' ')
-        query = query.lower()
 
         reserved_list = ['update', 'delete', 'insert', 'load', 'create', 'drop', 'clear']
         for keyword in reserved_list:
-            if keyword in query:
+            if re.search(keyword, query, re.IGNORECASE):
                 raise PermissionError('Not allow to run this query')
-
-        q = '''
-        SELECT ?t (COUNT(?n) as ?count) 
-        WHERE { ?n a ?t }
-        GROUP BY ?t
-        '''
 
         return self.store.perform_sparql_query(query=query)
 
@@ -54,7 +48,28 @@ class TripleStoreAPI:
             g.add(triple)
         return g
 
-    def get_opstellingen_by_bounds(self, lower_lat: float, lower_long: float, upper_lat: float, upper_long: float):
+    def get_opstellingen_by_bounds(self, lower_lat: float, lower_long: float, upper_lat: float,
+                                             upper_long: float):
+        g = self.store.get_graph(self.source)
+        lats = g.subject_objects(predicate=URIRef('http://www.w3.org/2003/01/geo/wgs84_pos#lat'))
+        lat_subjects = []
+        for lat in lats:
+            if (lower_lat < float(lat[1]) < upper_lat):
+                lat_subjects.append(lat[0])
+
+        long_subjects = []
+        longs = g.subject_objects(predicate=URIRef('http://www.w3.org/2003/01/geo/wgs84_pos#long'))
+        for long in longs:
+            if (lower_long < float(long[1]) < upper_long):
+                long_subjects.append(long[0])
+
+        inters = set(lat_subjects).intersection(long_subjects)
+
+        for inter in inters:
+            for subject in g.subjects(predicate=URIRef('http://www.w3.org/ns/locn#geometry'), object=inter):
+                yield from self.yield_triples_found_by_subject(subject)
+
+    def get_opstellingen_by_bounds_by_sparql(self, lower_lat: float, lower_long: float, upper_lat: float, upper_long: float):
         query = '''
 prefix mob: <https://data.vlaanderen.be/ns/mobiliteit#>
 prefix loc: <http://www.w3.org/ns/locn#>
@@ -79,6 +94,19 @@ WHERE {
 
         for opstelling in results:
             yield from self.yield_triples_found_by_subject(opstelling)
+
+    def get_opstellingen_by_wegsegment_using_sparql(self, wegsegment_id: str):
+        query = """
+        SELECT ?s ?segment
+        WHERE { 
+            ?s a <https://data.vlaanderen.be/ns/mobiliteit#Opstelling> .
+            ?s <https://data.vlaanderen.be/ns/mobiliteit#hoortBij> ?segment .
+            FILTER (?segment = <https://www.vlaanderen.be/digitaal-vlaanderen/onze-oplossingen/wegenregister/""" + \
+            f'{wegsegment_id}>)' + '}'
+
+        results = self.perform_sparql_query(query)
+        for row in results['data']:
+            yield from self.yield_triples_found_by_subject(URIRef(row[0]))
 
     def get_asset_triples(self, asset_id: str) -> Generator:
         if self.store.get_graph(self.source) is None:
